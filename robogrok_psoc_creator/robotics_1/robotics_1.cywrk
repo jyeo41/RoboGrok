@@ -3,12 +3,13 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="robotics_1" persistent="robotics_1.cywrk" platform="NOT_USED">
-<current_project name=".\lcd_example.cydsn\lcd_example.cyprj" />
+<current_project name=".\servos.cydsn\servos.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\introduction.cydsn\introduction.cyprj</v>
 <v>.\lcd_example.cydsn\lcd_example.cyprj</v>
+<v>.\servos.cydsn\servos.cyprj</v>
 </projects>
 <workspace_id v="503a67bd-bf21-4ea9-90d0-29ceeddbe390" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />

@@ -1,0 +1,981 @@
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_fmul
+  20              		.global	__aeabi_fadd
+  21              		.global	__aeabi_f2iz
+  22              		.global	__aeabi_i2f
+  23              		.section	.text.theta_1,"ax",%progbits
+  24              		.align	2
+  25              		.global	theta_1
+  26              		.thumb
+  27              		.thumb_func
+  28              		.type	theta_1, %function
+  29              	theta_1:
+  30              	.LFB63:
+  31              		.file 1 "main.c"
+   1:main.c        **** #include "project.h"
+   2:main.c        **** 
+   3:main.c        **** float theta_1(float angle)
+   4:main.c        **** {
+  32              		.loc 1 4 0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 0
+  35              		@ frame_needed = 0, uses_anonymous_args = 0
+  36              	.LVL0:
+  37 0000 08B5     		push	{r3, lr}
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 3, -8
+  40              		.cfi_offset 14, -4
+  41              	.LVL1:
+   5:main.c        ****     int compare;
+   6:main.c        ****     int min_angle = 0;
+   7:main.c        ****     int max_angle = 180;
+   8:main.c        ****     int min_comp = 1250;
+   9:main.c        ****     int max_comp = 7000;
+  10:main.c        ****     
+  11:main.c        ****     return compare = (((max_comp - min_comp) / (max_angle - min_angle)) * (angle - min_angle)) + mi
+  42              		.loc 1 11 0
+  43 0002 0549     		ldr	r1, .L3
+  44 0004 FFF7FEFF 		bl	__aeabi_fmul
+  45              	.LVL2:
+  46 0008 0449     		ldr	r1, .L3+4
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 2
+
+
+  47 000a FFF7FEFF 		bl	__aeabi_fadd
+  48              	.LVL3:
+  49 000e FFF7FEFF 		bl	__aeabi_f2iz
+  50              	.LVL4:
+  51 0012 FFF7FEFF 		bl	__aeabi_i2f
+  52              	.LVL5:
+  12:main.c        **** }
+  53              		.loc 1 12 0
+  54 0016 08BD     		pop	{r3, pc}
+  55              	.L4:
+  56              		.align	2
+  57              	.L3:
+  58 0018 0000F841 		.word	1106771968
+  59 001c 00409C44 		.word	1151090688
+  60              		.cfi_endproc
+  61              	.LFE63:
+  62              		.size	theta_1, .-theta_1
+  63              		.section	.text.theta_2,"ax",%progbits
+  64              		.align	2
+  65              		.global	theta_2
+  66              		.thumb
+  67              		.thumb_func
+  68              		.type	theta_2, %function
+  69              	theta_2:
+  70              	.LFB64:
+  13:main.c        **** 
+  14:main.c        **** float theta_2(float angle)
+  15:main.c        **** {
+  71              		.loc 1 15 0
+  72              		.cfi_startproc
+  73              		@ args = 0, pretend = 0, frame = 0
+  74              		@ frame_needed = 0, uses_anonymous_args = 0
+  75              	.LVL6:
+  76 0000 08B5     		push	{r3, lr}
+  77              		.cfi_def_cfa_offset 8
+  78              		.cfi_offset 3, -8
+  79              		.cfi_offset 14, -4
+  80              	.LVL7:
+  16:main.c        ****     int compare;
+  17:main.c        ****     int min_angle = -90;
+  18:main.c        ****     int max_angle = 90;
+  19:main.c        ****     int min_comp = 1100;
+  20:main.c        ****     int max_comp = 6800;
+  21:main.c        ****     
+  22:main.c        ****     return compare = (((max_comp - min_comp) / (max_angle - min_angle)) * (angle - min_angle)) + mi
+  81              		.loc 1 22 0
+  82 0002 0749     		ldr	r1, .L7
+  83 0004 FFF7FEFF 		bl	__aeabi_fadd
+  84              	.LVL8:
+  85 0008 0649     		ldr	r1, .L7+4
+  86 000a FFF7FEFF 		bl	__aeabi_fmul
+  87              	.LVL9:
+  88 000e 0649     		ldr	r1, .L7+8
+  89 0010 FFF7FEFF 		bl	__aeabi_fadd
+  90              	.LVL10:
+  91 0014 FFF7FEFF 		bl	__aeabi_f2iz
+  92              	.LVL11:
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 3
+
+
+  93 0018 FFF7FEFF 		bl	__aeabi_i2f
+  94              	.LVL12:
+  23:main.c        **** }
+  95              		.loc 1 23 0
+  96 001c 08BD     		pop	{r3, pc}
+  97              	.L8:
+  98 001e 00BF     		.align	2
+  99              	.L7:
+ 100 0020 0000B442 		.word	1119092736
+ 101 0024 0000F841 		.word	1106771968
+ 102 0028 00808944 		.word	1149861888
+ 103              		.cfi_endproc
+ 104              	.LFE64:
+ 105              		.size	theta_2, .-theta_2
+ 106              		.global	__aeabi_f2uiz
+ 107              		.section	.text.main,"ax",%progbits
+ 108              		.align	2
+ 109              		.global	main
+ 110              		.thumb
+ 111              		.thumb_func
+ 112              		.type	main, %function
+ 113              	main:
+ 114              	.LFB65:
+  24:main.c        **** 
+  25:main.c        **** int main(void)
+  26:main.c        **** {
+ 115              		.loc 1 26 0
+ 116              		.cfi_startproc
+ 117              		@ Volatile: function does not return.
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120 0000 08B5     		push	{r3, lr}
+ 121              		.cfi_def_cfa_offset 8
+ 122              		.cfi_offset 3, -8
+ 123              		.cfi_offset 14, -4
+  27:main.c        ****     PWM_1_Start();
+ 124              		.loc 1 27 0
+ 125 0002 FFF7FEFF 		bl	PWM_1_Start
+ 126              	.LVL13:
+ 127              	.L10:
+  28:main.c        ****     
+  29:main.c        ****     for(;;)
+  30:main.c        ****     {
+  31:main.c        ****         PWM_1_WriteCompare1(theta_1(30.0));  // Send servo 1 to clockwise position
+ 128              		.loc 1 31 0 discriminator 1
+ 129 0006 0A48     		ldr	r0, .L12
+ 130 0008 FFF7FEFF 		bl	theta_1
+ 131              	.LVL14:
+ 132 000c FFF7FEFF 		bl	__aeabi_f2uiz
+ 133              	.LVL15:
+ 134 0010 80B2     		uxth	r0, r0
+ 135 0012 FFF7FEFF 		bl	PWM_1_WriteCompare1
+ 136              	.LVL16:
+  32:main.c        ****         PWM_1_WriteCompare2(theta_2(90.0));
+ 137              		.loc 1 32 0 discriminator 1
+ 138 0016 0748     		ldr	r0, .L12+4
+ 139 0018 FFF7FEFF 		bl	theta_2
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 4
+
+
+ 140              	.LVL17:
+ 141 001c FFF7FEFF 		bl	__aeabi_f2uiz
+ 142              	.LVL18:
+ 143 0020 80B2     		uxth	r0, r0
+ 144 0022 FFF7FEFF 		bl	PWM_1_WriteCompare2
+ 145              	.LVL19:
+  33:main.c        ****         CyDelay(2000);
+ 146              		.loc 1 33 0 discriminator 1
+ 147 0026 4FF4FA60 		mov	r0, #2000
+ 148 002a FFF7FEFF 		bl	CyDelay
+ 149              	.LVL20:
+ 150 002e EAE7     		b	.L10
+ 151              	.L13:
+ 152              		.align	2
+ 153              	.L12:
+ 154 0030 0000F041 		.word	1106247680
+ 155 0034 0000B442 		.word	1119092736
+ 156              		.cfi_endproc
+ 157              	.LFE65:
+ 158              		.size	main, .-main
+ 159              		.text
+ 160              	.Letext0:
+ 161              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 162              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 163              		.file 4 "Generated_Source\\PSoC5/PWM_1.h"
+ 164              		.file 5 "Generated_Source\\PSoC5/CyLib.h"
+ 165              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 166              		.section	.debug_info,"",%progbits
+ 167              	.Ldebug_info0:
+ 168 0000 0B020000 		.4byte	0x20b
+ 169 0004 0400     		.2byte	0x4
+ 170 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 171 000a 04       		.byte	0x4
+ 172 000b 01       		.uleb128 0x1
+ 173 000c 59000000 		.4byte	.LASF28
+ 174 0010 0C       		.byte	0xc
+ 175 0011 8A010000 		.4byte	.LASF29
+ 176 0015 E4010000 		.4byte	.LASF30
+ 177 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 178 001d 00000000 		.4byte	0
+ 179 0021 00000000 		.4byte	.Ldebug_line0
+ 180 0025 02       		.uleb128 0x2
+ 181 0026 04       		.byte	0x4
+ 182 0027 04       		.byte	0x4
+ 183 0028 45000000 		.4byte	.LASF0
+ 184 002c 02       		.uleb128 0x2
+ 185 002d 01       		.byte	0x1
+ 186 002e 06       		.byte	0x6
+ 187 002f BF010000 		.4byte	.LASF1
+ 188 0033 02       		.uleb128 0x2
+ 189 0034 01       		.byte	0x1
+ 190 0035 08       		.byte	0x8
+ 191 0036 4B000000 		.4byte	.LASF2
+ 192 003a 02       		.uleb128 0x2
+ 193 003b 02       		.byte	0x2
+ 194 003c 05       		.byte	0x5
+ 195 003d A0010000 		.4byte	.LASF3
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 5
+
+
+ 196 0041 02       		.uleb128 0x2
+ 197 0042 02       		.byte	0x2
+ 198 0043 07       		.byte	0x7
+ 199 0044 0A000000 		.4byte	.LASF4
+ 200 0048 03       		.uleb128 0x3
+ 201 0049 00000000 		.4byte	.LASF10
+ 202 004d 02       		.byte	0x2
+ 203 004e 3F       		.byte	0x3f
+ 204 004f 53000000 		.4byte	0x53
+ 205 0053 02       		.uleb128 0x2
+ 206 0054 04       		.byte	0x4
+ 207 0055 05       		.byte	0x5
+ 208 0056 AA010000 		.4byte	.LASF5
+ 209 005a 02       		.uleb128 0x2
+ 210 005b 04       		.byte	0x4
+ 211 005c 07       		.byte	0x7
+ 212 005d F1000000 		.4byte	.LASF6
+ 213 0061 02       		.uleb128 0x2
+ 214 0062 08       		.byte	0x8
+ 215 0063 05       		.byte	0x5
+ 216 0064 7C010000 		.4byte	.LASF7
+ 217 0068 02       		.uleb128 0x2
+ 218 0069 08       		.byte	0x8
+ 219 006a 07       		.byte	0x7
+ 220 006b 44010000 		.4byte	.LASF8
+ 221 006f 04       		.uleb128 0x4
+ 222 0070 04       		.byte	0x4
+ 223 0071 05       		.byte	0x5
+ 224 0072 696E7400 		.ascii	"int\000"
+ 225 0076 02       		.uleb128 0x2
+ 226 0077 04       		.byte	0x4
+ 227 0078 07       		.byte	0x7
+ 228 0079 37010000 		.4byte	.LASF9
+ 229 007d 03       		.uleb128 0x3
+ 230 007e 6B010000 		.4byte	.LASF11
+ 231 0082 03       		.byte	0x3
+ 232 0083 2C       		.byte	0x2c
+ 233 0084 48000000 		.4byte	0x48
+ 234 0088 02       		.uleb128 0x2
+ 235 0089 08       		.byte	0x8
+ 236 008a 04       		.byte	0x4
+ 237 008b 22010000 		.4byte	.LASF12
+ 238 008f 02       		.uleb128 0x2
+ 239 0090 01       		.byte	0x1
+ 240 0091 08       		.byte	0x8
+ 241 0092 91010000 		.4byte	.LASF13
+ 242 0096 02       		.uleb128 0x2
+ 243 0097 08       		.byte	0x8
+ 244 0098 04       		.byte	0x4
+ 245 0099 B3010000 		.4byte	.LASF14
+ 246 009d 02       		.uleb128 0x2
+ 247 009e 04       		.byte	0x4
+ 248 009f 07       		.byte	0x7
+ 249 00a0 73010000 		.4byte	.LASF15
+ 250 00a4 05       		.uleb128 0x5
+ 251 00a5 5B010000 		.4byte	.LASF21
+ 252 00a9 01       		.byte	0x1
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 6
+
+
+ 253 00aa 03       		.byte	0x3
+ 254 00ab 25000000 		.4byte	0x25
+ 255 00af 00000000 		.4byte	.LFB63
+ 256 00b3 20000000 		.4byte	.LFE63-.LFB63
+ 257 00b7 01       		.uleb128 0x1
+ 258 00b8 9C       		.byte	0x9c
+ 259 00b9 0E010000 		.4byte	0x10e
+ 260 00bd 06       		.uleb128 0x6
+ 261 00be 0F010000 		.4byte	.LASF23
+ 262 00c2 01       		.byte	0x1
+ 263 00c3 03       		.byte	0x3
+ 264 00c4 25000000 		.4byte	0x25
+ 265 00c8 00000000 		.4byte	.LLST0
+ 266 00cc 07       		.uleb128 0x7
+ 267 00cd CB010000 		.4byte	.LASF16
+ 268 00d1 01       		.byte	0x1
+ 269 00d2 05       		.byte	0x5
+ 270 00d3 6F000000 		.4byte	0x6f
+ 271 00d7 23000000 		.4byte	.LLST1
+ 272 00db 08       		.uleb128 0x8
+ 273 00dc E7000000 		.4byte	.LASF17
+ 274 00e0 01       		.byte	0x1
+ 275 00e1 06       		.byte	0x6
+ 276 00e2 6F000000 		.4byte	0x6f
+ 277 00e6 00       		.byte	0
+ 278 00e7 08       		.uleb128 0x8
+ 279 00e8 96010000 		.4byte	.LASF18
+ 280 00ec 01       		.byte	0x1
+ 281 00ed 07       		.byte	0x7
+ 282 00ee 6F000000 		.4byte	0x6f
+ 283 00f2 B4       		.byte	0xb4
+ 284 00f3 09       		.uleb128 0x9
+ 285 00f4 D3010000 		.4byte	.LASF19
+ 286 00f8 01       		.byte	0x1
+ 287 00f9 08       		.byte	0x8
+ 288 00fa 6F000000 		.4byte	0x6f
+ 289 00fe E204     		.2byte	0x4e2
+ 290 0100 09       		.uleb128 0x9
+ 291 0101 29010000 		.4byte	.LASF20
+ 292 0105 01       		.byte	0x1
+ 293 0106 09       		.byte	0x9
+ 294 0107 6F000000 		.4byte	0x6f
+ 295 010b 581B     		.2byte	0x1b58
+ 296 010d 00       		.byte	0
+ 297 010e 05       		.uleb128 0x5
+ 298 010f 63010000 		.4byte	.LASF22
+ 299 0113 01       		.byte	0x1
+ 300 0114 0E       		.byte	0xe
+ 301 0115 25000000 		.4byte	0x25
+ 302 0119 00000000 		.4byte	.LFB64
+ 303 011d 2C000000 		.4byte	.LFE64-.LFB64
+ 304 0121 01       		.uleb128 0x1
+ 305 0122 9C       		.byte	0x9c
+ 306 0123 79010000 		.4byte	0x179
+ 307 0127 06       		.uleb128 0x6
+ 308 0128 0F010000 		.4byte	.LASF23
+ 309 012c 01       		.byte	0x1
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 7
+
+
+ 310 012d 0E       		.byte	0xe
+ 311 012e 25000000 		.4byte	0x25
+ 312 0132 36000000 		.4byte	.LLST2
+ 313 0136 07       		.uleb128 0x7
+ 314 0137 CB010000 		.4byte	.LASF16
+ 315 013b 01       		.byte	0x1
+ 316 013c 10       		.byte	0x10
+ 317 013d 6F000000 		.4byte	0x6f
+ 318 0141 59000000 		.4byte	.LLST3
+ 319 0145 0A       		.uleb128 0xa
+ 320 0146 E7000000 		.4byte	.LASF17
+ 321 014a 01       		.byte	0x1
+ 322 014b 11       		.byte	0x11
+ 323 014c 6F000000 		.4byte	0x6f
+ 324 0150 A67F     		.sleb128 -90
+ 325 0152 08       		.uleb128 0x8
+ 326 0153 96010000 		.4byte	.LASF18
+ 327 0157 01       		.byte	0x1
+ 328 0158 12       		.byte	0x12
+ 329 0159 6F000000 		.4byte	0x6f
+ 330 015d 5A       		.byte	0x5a
+ 331 015e 09       		.uleb128 0x9
+ 332 015f D3010000 		.4byte	.LASF19
+ 333 0163 01       		.byte	0x1
+ 334 0164 13       		.byte	0x13
+ 335 0165 6F000000 		.4byte	0x6f
+ 336 0169 4C04     		.2byte	0x44c
+ 337 016b 09       		.uleb128 0x9
+ 338 016c 29010000 		.4byte	.LASF20
+ 339 0170 01       		.byte	0x1
+ 340 0171 14       		.byte	0x14
+ 341 0172 6F000000 		.4byte	0x6f
+ 342 0176 901A     		.2byte	0x1a90
+ 343 0178 00       		.byte	0
+ 344 0179 0B       		.uleb128 0xb
+ 345 017a 32010000 		.4byte	.LASF31
+ 346 017e 01       		.byte	0x1
+ 347 017f 19       		.byte	0x19
+ 348 0180 6F000000 		.4byte	0x6f
+ 349 0184 00000000 		.4byte	.LFB65
+ 350 0188 38000000 		.4byte	.LFE65-.LFB65
+ 351 018c 01       		.uleb128 0x1
+ 352 018d 9C       		.byte	0x9c
+ 353 018e D1010000 		.4byte	0x1d1
+ 354 0192 0C       		.uleb128 0xc
+ 355 0193 06000000 		.4byte	.LVL13
+ 356 0197 E2010000 		.4byte	0x1e2
+ 357 019b 0C       		.uleb128 0xc
+ 358 019c 0C000000 		.4byte	.LVL14
+ 359 01a0 A4000000 		.4byte	0xa4
+ 360 01a4 0C       		.uleb128 0xc
+ 361 01a5 16000000 		.4byte	.LVL16
+ 362 01a9 ED010000 		.4byte	0x1ed
+ 363 01ad 0C       		.uleb128 0xc
+ 364 01ae 1C000000 		.4byte	.LVL17
+ 365 01b2 0E010000 		.4byte	0x10e
+ 366 01b6 0C       		.uleb128 0xc
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 8
+
+
+ 367 01b7 26000000 		.4byte	.LVL19
+ 368 01bb F8010000 		.4byte	0x1f8
+ 369 01bf 0D       		.uleb128 0xd
+ 370 01c0 2E000000 		.4byte	.LVL20
+ 371 01c4 03020000 		.4byte	0x203
+ 372 01c8 0E       		.uleb128 0xe
+ 373 01c9 01       		.uleb128 0x1
+ 374 01ca 50       		.byte	0x50
+ 375 01cb 03       		.uleb128 0x3
+ 376 01cc 0A       		.byte	0xa
+ 377 01cd D007     		.2byte	0x7d0
+ 378 01cf 00       		.byte	0
+ 379 01d0 00       		.byte	0
+ 380 01d1 0F       		.uleb128 0xf
+ 381 01d2 15010000 		.4byte	.LASF32
+ 382 01d6 06       		.byte	0x6
+ 383 01d7 1207     		.2byte	0x712
+ 384 01d9 DD010000 		.4byte	0x1dd
+ 385 01dd 10       		.uleb128 0x10
+ 386 01de 7D000000 		.4byte	0x7d
+ 387 01e2 11       		.uleb128 0x11
+ 388 01e3 03010000 		.4byte	.LASF24
+ 389 01e7 03010000 		.4byte	.LASF24
+ 390 01eb 04       		.byte	0x4
+ 391 01ec 92       		.byte	0x92
+ 392 01ed 11       		.uleb128 0x11
+ 393 01ee 1D000000 		.4byte	.LASF25
+ 394 01f2 1D000000 		.4byte	.LASF25
+ 395 01f6 04       		.byte	0x4
+ 396 01f7 C7       		.byte	0xc7
+ 397 01f8 11       		.uleb128 0x11
+ 398 01f9 31000000 		.4byte	.LASF26
+ 399 01fd 31000000 		.4byte	.LASF26
+ 400 0201 04       		.byte	0x4
+ 401 0202 CA       		.byte	0xca
+ 402 0203 11       		.uleb128 0x11
+ 403 0204 DC010000 		.4byte	.LASF27
+ 404 0208 DC010000 		.4byte	.LASF27
+ 405 020c 05       		.byte	0x5
+ 406 020d 76       		.byte	0x76
+ 407 020e 00       		.byte	0
+ 408              		.section	.debug_abbrev,"",%progbits
+ 409              	.Ldebug_abbrev0:
+ 410 0000 01       		.uleb128 0x1
+ 411 0001 11       		.uleb128 0x11
+ 412 0002 01       		.byte	0x1
+ 413 0003 25       		.uleb128 0x25
+ 414 0004 0E       		.uleb128 0xe
+ 415 0005 13       		.uleb128 0x13
+ 416 0006 0B       		.uleb128 0xb
+ 417 0007 03       		.uleb128 0x3
+ 418 0008 0E       		.uleb128 0xe
+ 419 0009 1B       		.uleb128 0x1b
+ 420 000a 0E       		.uleb128 0xe
+ 421 000b 55       		.uleb128 0x55
+ 422 000c 17       		.uleb128 0x17
+ 423 000d 11       		.uleb128 0x11
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 9
+
+
+ 424 000e 01       		.uleb128 0x1
+ 425 000f 10       		.uleb128 0x10
+ 426 0010 17       		.uleb128 0x17
+ 427 0011 00       		.byte	0
+ 428 0012 00       		.byte	0
+ 429 0013 02       		.uleb128 0x2
+ 430 0014 24       		.uleb128 0x24
+ 431 0015 00       		.byte	0
+ 432 0016 0B       		.uleb128 0xb
+ 433 0017 0B       		.uleb128 0xb
+ 434 0018 3E       		.uleb128 0x3e
+ 435 0019 0B       		.uleb128 0xb
+ 436 001a 03       		.uleb128 0x3
+ 437 001b 0E       		.uleb128 0xe
+ 438 001c 00       		.byte	0
+ 439 001d 00       		.byte	0
+ 440 001e 03       		.uleb128 0x3
+ 441 001f 16       		.uleb128 0x16
+ 442 0020 00       		.byte	0
+ 443 0021 03       		.uleb128 0x3
+ 444 0022 0E       		.uleb128 0xe
+ 445 0023 3A       		.uleb128 0x3a
+ 446 0024 0B       		.uleb128 0xb
+ 447 0025 3B       		.uleb128 0x3b
+ 448 0026 0B       		.uleb128 0xb
+ 449 0027 49       		.uleb128 0x49
+ 450 0028 13       		.uleb128 0x13
+ 451 0029 00       		.byte	0
+ 452 002a 00       		.byte	0
+ 453 002b 04       		.uleb128 0x4
+ 454 002c 24       		.uleb128 0x24
+ 455 002d 00       		.byte	0
+ 456 002e 0B       		.uleb128 0xb
+ 457 002f 0B       		.uleb128 0xb
+ 458 0030 3E       		.uleb128 0x3e
+ 459 0031 0B       		.uleb128 0xb
+ 460 0032 03       		.uleb128 0x3
+ 461 0033 08       		.uleb128 0x8
+ 462 0034 00       		.byte	0
+ 463 0035 00       		.byte	0
+ 464 0036 05       		.uleb128 0x5
+ 465 0037 2E       		.uleb128 0x2e
+ 466 0038 01       		.byte	0x1
+ 467 0039 3F       		.uleb128 0x3f
+ 468 003a 19       		.uleb128 0x19
+ 469 003b 03       		.uleb128 0x3
+ 470 003c 0E       		.uleb128 0xe
+ 471 003d 3A       		.uleb128 0x3a
+ 472 003e 0B       		.uleb128 0xb
+ 473 003f 3B       		.uleb128 0x3b
+ 474 0040 0B       		.uleb128 0xb
+ 475 0041 27       		.uleb128 0x27
+ 476 0042 19       		.uleb128 0x19
+ 477 0043 49       		.uleb128 0x49
+ 478 0044 13       		.uleb128 0x13
+ 479 0045 11       		.uleb128 0x11
+ 480 0046 01       		.uleb128 0x1
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 10
+
+
+ 481 0047 12       		.uleb128 0x12
+ 482 0048 06       		.uleb128 0x6
+ 483 0049 40       		.uleb128 0x40
+ 484 004a 18       		.uleb128 0x18
+ 485 004b 9642     		.uleb128 0x2116
+ 486 004d 19       		.uleb128 0x19
+ 487 004e 01       		.uleb128 0x1
+ 488 004f 13       		.uleb128 0x13
+ 489 0050 00       		.byte	0
+ 490 0051 00       		.byte	0
+ 491 0052 06       		.uleb128 0x6
+ 492 0053 05       		.uleb128 0x5
+ 493 0054 00       		.byte	0
+ 494 0055 03       		.uleb128 0x3
+ 495 0056 0E       		.uleb128 0xe
+ 496 0057 3A       		.uleb128 0x3a
+ 497 0058 0B       		.uleb128 0xb
+ 498 0059 3B       		.uleb128 0x3b
+ 499 005a 0B       		.uleb128 0xb
+ 500 005b 49       		.uleb128 0x49
+ 501 005c 13       		.uleb128 0x13
+ 502 005d 02       		.uleb128 0x2
+ 503 005e 17       		.uleb128 0x17
+ 504 005f 00       		.byte	0
+ 505 0060 00       		.byte	0
+ 506 0061 07       		.uleb128 0x7
+ 507 0062 34       		.uleb128 0x34
+ 508 0063 00       		.byte	0
+ 509 0064 03       		.uleb128 0x3
+ 510 0065 0E       		.uleb128 0xe
+ 511 0066 3A       		.uleb128 0x3a
+ 512 0067 0B       		.uleb128 0xb
+ 513 0068 3B       		.uleb128 0x3b
+ 514 0069 0B       		.uleb128 0xb
+ 515 006a 49       		.uleb128 0x49
+ 516 006b 13       		.uleb128 0x13
+ 517 006c 02       		.uleb128 0x2
+ 518 006d 17       		.uleb128 0x17
+ 519 006e 00       		.byte	0
+ 520 006f 00       		.byte	0
+ 521 0070 08       		.uleb128 0x8
+ 522 0071 34       		.uleb128 0x34
+ 523 0072 00       		.byte	0
+ 524 0073 03       		.uleb128 0x3
+ 525 0074 0E       		.uleb128 0xe
+ 526 0075 3A       		.uleb128 0x3a
+ 527 0076 0B       		.uleb128 0xb
+ 528 0077 3B       		.uleb128 0x3b
+ 529 0078 0B       		.uleb128 0xb
+ 530 0079 49       		.uleb128 0x49
+ 531 007a 13       		.uleb128 0x13
+ 532 007b 1C       		.uleb128 0x1c
+ 533 007c 0B       		.uleb128 0xb
+ 534 007d 00       		.byte	0
+ 535 007e 00       		.byte	0
+ 536 007f 09       		.uleb128 0x9
+ 537 0080 34       		.uleb128 0x34
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 11
+
+
+ 538 0081 00       		.byte	0
+ 539 0082 03       		.uleb128 0x3
+ 540 0083 0E       		.uleb128 0xe
+ 541 0084 3A       		.uleb128 0x3a
+ 542 0085 0B       		.uleb128 0xb
+ 543 0086 3B       		.uleb128 0x3b
+ 544 0087 0B       		.uleb128 0xb
+ 545 0088 49       		.uleb128 0x49
+ 546 0089 13       		.uleb128 0x13
+ 547 008a 1C       		.uleb128 0x1c
+ 548 008b 05       		.uleb128 0x5
+ 549 008c 00       		.byte	0
+ 550 008d 00       		.byte	0
+ 551 008e 0A       		.uleb128 0xa
+ 552 008f 34       		.uleb128 0x34
+ 553 0090 00       		.byte	0
+ 554 0091 03       		.uleb128 0x3
+ 555 0092 0E       		.uleb128 0xe
+ 556 0093 3A       		.uleb128 0x3a
+ 557 0094 0B       		.uleb128 0xb
+ 558 0095 3B       		.uleb128 0x3b
+ 559 0096 0B       		.uleb128 0xb
+ 560 0097 49       		.uleb128 0x49
+ 561 0098 13       		.uleb128 0x13
+ 562 0099 1C       		.uleb128 0x1c
+ 563 009a 0D       		.uleb128 0xd
+ 564 009b 00       		.byte	0
+ 565 009c 00       		.byte	0
+ 566 009d 0B       		.uleb128 0xb
+ 567 009e 2E       		.uleb128 0x2e
+ 568 009f 01       		.byte	0x1
+ 569 00a0 3F       		.uleb128 0x3f
+ 570 00a1 19       		.uleb128 0x19
+ 571 00a2 03       		.uleb128 0x3
+ 572 00a3 0E       		.uleb128 0xe
+ 573 00a4 3A       		.uleb128 0x3a
+ 574 00a5 0B       		.uleb128 0xb
+ 575 00a6 3B       		.uleb128 0x3b
+ 576 00a7 0B       		.uleb128 0xb
+ 577 00a8 27       		.uleb128 0x27
+ 578 00a9 19       		.uleb128 0x19
+ 579 00aa 49       		.uleb128 0x49
+ 580 00ab 13       		.uleb128 0x13
+ 581 00ac 8701     		.uleb128 0x87
+ 582 00ae 19       		.uleb128 0x19
+ 583 00af 11       		.uleb128 0x11
+ 584 00b0 01       		.uleb128 0x1
+ 585 00b1 12       		.uleb128 0x12
+ 586 00b2 06       		.uleb128 0x6
+ 587 00b3 40       		.uleb128 0x40
+ 588 00b4 18       		.uleb128 0x18
+ 589 00b5 9642     		.uleb128 0x2116
+ 590 00b7 19       		.uleb128 0x19
+ 591 00b8 01       		.uleb128 0x1
+ 592 00b9 13       		.uleb128 0x13
+ 593 00ba 00       		.byte	0
+ 594 00bb 00       		.byte	0
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 12
+
+
+ 595 00bc 0C       		.uleb128 0xc
+ 596 00bd 898201   		.uleb128 0x4109
+ 597 00c0 00       		.byte	0
+ 598 00c1 11       		.uleb128 0x11
+ 599 00c2 01       		.uleb128 0x1
+ 600 00c3 31       		.uleb128 0x31
+ 601 00c4 13       		.uleb128 0x13
+ 602 00c5 00       		.byte	0
+ 603 00c6 00       		.byte	0
+ 604 00c7 0D       		.uleb128 0xd
+ 605 00c8 898201   		.uleb128 0x4109
+ 606 00cb 01       		.byte	0x1
+ 607 00cc 11       		.uleb128 0x11
+ 608 00cd 01       		.uleb128 0x1
+ 609 00ce 31       		.uleb128 0x31
+ 610 00cf 13       		.uleb128 0x13
+ 611 00d0 00       		.byte	0
+ 612 00d1 00       		.byte	0
+ 613 00d2 0E       		.uleb128 0xe
+ 614 00d3 8A8201   		.uleb128 0x410a
+ 615 00d6 00       		.byte	0
+ 616 00d7 02       		.uleb128 0x2
+ 617 00d8 18       		.uleb128 0x18
+ 618 00d9 9142     		.uleb128 0x2111
+ 619 00db 18       		.uleb128 0x18
+ 620 00dc 00       		.byte	0
+ 621 00dd 00       		.byte	0
+ 622 00de 0F       		.uleb128 0xf
+ 623 00df 34       		.uleb128 0x34
+ 624 00e0 00       		.byte	0
+ 625 00e1 03       		.uleb128 0x3
+ 626 00e2 0E       		.uleb128 0xe
+ 627 00e3 3A       		.uleb128 0x3a
+ 628 00e4 0B       		.uleb128 0xb
+ 629 00e5 3B       		.uleb128 0x3b
+ 630 00e6 05       		.uleb128 0x5
+ 631 00e7 49       		.uleb128 0x49
+ 632 00e8 13       		.uleb128 0x13
+ 633 00e9 3F       		.uleb128 0x3f
+ 634 00ea 19       		.uleb128 0x19
+ 635 00eb 3C       		.uleb128 0x3c
+ 636 00ec 19       		.uleb128 0x19
+ 637 00ed 00       		.byte	0
+ 638 00ee 00       		.byte	0
+ 639 00ef 10       		.uleb128 0x10
+ 640 00f0 35       		.uleb128 0x35
+ 641 00f1 00       		.byte	0
+ 642 00f2 49       		.uleb128 0x49
+ 643 00f3 13       		.uleb128 0x13
+ 644 00f4 00       		.byte	0
+ 645 00f5 00       		.byte	0
+ 646 00f6 11       		.uleb128 0x11
+ 647 00f7 2E       		.uleb128 0x2e
+ 648 00f8 00       		.byte	0
+ 649 00f9 3F       		.uleb128 0x3f
+ 650 00fa 19       		.uleb128 0x19
+ 651 00fb 3C       		.uleb128 0x3c
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 13
+
+
+ 652 00fc 19       		.uleb128 0x19
+ 653 00fd 6E       		.uleb128 0x6e
+ 654 00fe 0E       		.uleb128 0xe
+ 655 00ff 03       		.uleb128 0x3
+ 656 0100 0E       		.uleb128 0xe
+ 657 0101 3A       		.uleb128 0x3a
+ 658 0102 0B       		.uleb128 0xb
+ 659 0103 3B       		.uleb128 0x3b
+ 660 0104 0B       		.uleb128 0xb
+ 661 0105 00       		.byte	0
+ 662 0106 00       		.byte	0
+ 663 0107 00       		.byte	0
+ 664              		.section	.debug_loc,"",%progbits
+ 665              	.Ldebug_loc0:
+ 666              	.LLST0:
+ 667 0000 00000000 		.4byte	.LVL0
+ 668 0004 07000000 		.4byte	.LVL2-1
+ 669 0008 0100     		.2byte	0x1
+ 670 000a 50       		.byte	0x50
+ 671 000b 07000000 		.4byte	.LVL2-1
+ 672 000f 20000000 		.4byte	.LFE63
+ 673 0013 0600     		.2byte	0x6
+ 674 0015 F3       		.byte	0xf3
+ 675 0016 03       		.uleb128 0x3
+ 676 0017 F5       		.byte	0xf5
+ 677 0018 00       		.uleb128 0
+ 678 0019 25       		.uleb128 0x25
+ 679 001a 9F       		.byte	0x9f
+ 680 001b 00000000 		.4byte	0
+ 681 001f 00000000 		.4byte	0
+ 682              	.LLST1:
+ 683 0023 12000000 		.4byte	.LVL4
+ 684 0027 15000000 		.4byte	.LVL5-1
+ 685 002b 0100     		.2byte	0x1
+ 686 002d 50       		.byte	0x50
+ 687 002e 00000000 		.4byte	0
+ 688 0032 00000000 		.4byte	0
+ 689              	.LLST2:
+ 690 0036 00000000 		.4byte	.LVL6
+ 691 003a 07000000 		.4byte	.LVL8-1
+ 692 003e 0100     		.2byte	0x1
+ 693 0040 50       		.byte	0x50
+ 694 0041 07000000 		.4byte	.LVL8-1
+ 695 0045 2C000000 		.4byte	.LFE64
+ 696 0049 0600     		.2byte	0x6
+ 697 004b F3       		.byte	0xf3
+ 698 004c 03       		.uleb128 0x3
+ 699 004d F5       		.byte	0xf5
+ 700 004e 00       		.uleb128 0
+ 701 004f 25       		.uleb128 0x25
+ 702 0050 9F       		.byte	0x9f
+ 703 0051 00000000 		.4byte	0
+ 704 0055 00000000 		.4byte	0
+ 705              	.LLST3:
+ 706 0059 18000000 		.4byte	.LVL11
+ 707 005d 1B000000 		.4byte	.LVL12-1
+ 708 0061 0100     		.2byte	0x1
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 14
+
+
+ 709 0063 50       		.byte	0x50
+ 710 0064 00000000 		.4byte	0
+ 711 0068 00000000 		.4byte	0
+ 712              		.section	.debug_aranges,"",%progbits
+ 713 0000 2C000000 		.4byte	0x2c
+ 714 0004 0200     		.2byte	0x2
+ 715 0006 00000000 		.4byte	.Ldebug_info0
+ 716 000a 04       		.byte	0x4
+ 717 000b 00       		.byte	0
+ 718 000c 0000     		.2byte	0
+ 719 000e 0000     		.2byte	0
+ 720 0010 00000000 		.4byte	.LFB63
+ 721 0014 20000000 		.4byte	.LFE63-.LFB63
+ 722 0018 00000000 		.4byte	.LFB64
+ 723 001c 2C000000 		.4byte	.LFE64-.LFB64
+ 724 0020 00000000 		.4byte	.LFB65
+ 725 0024 38000000 		.4byte	.LFE65-.LFB65
+ 726 0028 00000000 		.4byte	0
+ 727 002c 00000000 		.4byte	0
+ 728              		.section	.debug_ranges,"",%progbits
+ 729              	.Ldebug_ranges0:
+ 730 0000 00000000 		.4byte	.LFB63
+ 731 0004 20000000 		.4byte	.LFE63
+ 732 0008 00000000 		.4byte	.LFB64
+ 733 000c 2C000000 		.4byte	.LFE64
+ 734 0010 00000000 		.4byte	.LFB65
+ 735 0014 38000000 		.4byte	.LFE65
+ 736 0018 00000000 		.4byte	0
+ 737 001c 00000000 		.4byte	0
+ 738              		.section	.debug_line,"",%progbits
+ 739              	.Ldebug_line0:
+ 740 0000 9A010000 		.section	.debug_str,"MS",%progbits,1
+ 740      02005501 
+ 740      00000201 
+ 740      FB0E0D00 
+ 740      01010101 
+ 741              	.LASF10:
+ 742 0000 5F5F696E 		.ascii	"__int32_t\000"
+ 742      7433325F 
+ 742      7400
+ 743              	.LASF4:
+ 744 000a 73686F72 		.ascii	"short unsigned int\000"
+ 744      7420756E 
+ 744      7369676E 
+ 744      65642069 
+ 744      6E7400
+ 745              	.LASF25:
+ 746 001d 50574D5F 		.ascii	"PWM_1_WriteCompare1\000"
+ 746      315F5772 
+ 746      69746543 
+ 746      6F6D7061 
+ 746      72653100 
+ 747              	.LASF26:
+ 748 0031 50574D5F 		.ascii	"PWM_1_WriteCompare2\000"
+ 748      315F5772 
+ 748      69746543 
+ 748      6F6D7061 
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 15
+
+
+ 748      72653200 
+ 749              	.LASF0:
+ 750 0045 666C6F61 		.ascii	"float\000"
+ 750      7400
+ 751              	.LASF2:
+ 752 004b 756E7369 		.ascii	"unsigned char\000"
+ 752      676E6564 
+ 752      20636861 
+ 752      7200
+ 753              	.LASF28:
+ 754 0059 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 754      43313120 
+ 754      352E342E 
+ 754      31203230 
+ 754      31363036 
+ 755 008c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 755      20726576 
+ 755      6973696F 
+ 755      6E203233 
+ 755      37373135 
+ 756 00bf 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 756      66756E63 
+ 756      74696F6E 
+ 756      2D736563 
+ 756      74696F6E 
+ 757              	.LASF17:
+ 758 00e7 6D696E5F 		.ascii	"min_angle\000"
+ 758      616E676C 
+ 758      6500
+ 759              	.LASF6:
+ 760 00f1 6C6F6E67 		.ascii	"long unsigned int\000"
+ 760      20756E73 
+ 760      69676E65 
+ 760      6420696E 
+ 760      7400
+ 761              	.LASF24:
+ 762 0103 50574D5F 		.ascii	"PWM_1_Start\000"
+ 762      315F5374 
+ 762      61727400 
+ 763              	.LASF23:
+ 764 010f 616E676C 		.ascii	"angle\000"
+ 764      6500
+ 765              	.LASF32:
+ 766 0115 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 766      52784275 
+ 766      66666572 
+ 766      00
+ 767              	.LASF12:
+ 768 0122 646F7562 		.ascii	"double\000"
+ 768      6C6500
+ 769              	.LASF20:
+ 770 0129 6D61785F 		.ascii	"max_comp\000"
+ 770      636F6D70 
+ 770      00
+ 771              	.LASF31:
+ 772 0132 6D61696E 		.ascii	"main\000"
+ 772      00
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 16
+
+
+ 773              	.LASF9:
+ 774 0137 756E7369 		.ascii	"unsigned int\000"
+ 774      676E6564 
+ 774      20696E74 
+ 774      00
+ 775              	.LASF8:
+ 776 0144 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 776      206C6F6E 
+ 776      6720756E 
+ 776      7369676E 
+ 776      65642069 
+ 777              	.LASF21:
+ 778 015b 74686574 		.ascii	"theta_1\000"
+ 778      615F3100 
+ 779              	.LASF22:
+ 780 0163 74686574 		.ascii	"theta_2\000"
+ 780      615F3200 
+ 781              	.LASF11:
+ 782 016b 696E7433 		.ascii	"int32_t\000"
+ 782      325F7400 
+ 783              	.LASF15:
+ 784 0173 73697A65 		.ascii	"sizetype\000"
+ 784      74797065 
+ 784      00
+ 785              	.LASF7:
+ 786 017c 6C6F6E67 		.ascii	"long long int\000"
+ 786      206C6F6E 
+ 786      6720696E 
+ 786      7400
+ 787              	.LASF29:
+ 788 018a 6D61696E 		.ascii	"main.c\000"
+ 788      2E6300
+ 789              	.LASF13:
+ 790 0191 63686172 		.ascii	"char\000"
+ 790      00
+ 791              	.LASF18:
+ 792 0196 6D61785F 		.ascii	"max_angle\000"
+ 792      616E676C 
+ 792      6500
+ 793              	.LASF3:
+ 794 01a0 73686F72 		.ascii	"short int\000"
+ 794      7420696E 
+ 794      7400
+ 795              	.LASF5:
+ 796 01aa 6C6F6E67 		.ascii	"long int\000"
+ 796      20696E74 
+ 796      00
+ 797              	.LASF14:
+ 798 01b3 6C6F6E67 		.ascii	"long double\000"
+ 798      20646F75 
+ 798      626C6500 
+ 799              	.LASF1:
+ 800 01bf 7369676E 		.ascii	"signed char\000"
+ 800      65642063 
+ 800      68617200 
+ 801              	.LASF16:
+ 802 01cb 636F6D70 		.ascii	"compare\000"
+ARM GAS  C:\Users\Joon\AppData\Local\Temp\ccdU5ui3.s 			page 17
+
+
+ 802      61726500 
+ 803              	.LASF19:
+ 804 01d3 6D696E5F 		.ascii	"min_comp\000"
+ 804      636F6D70 
+ 804      00
+ 805              	.LASF27:
+ 806 01dc 43794465 		.ascii	"CyDelay\000"
+ 806      6C617900 
+ 807              	.LASF30:
+ 808 01e4 433A5C72 		.ascii	"C:\\robogrok\\robogrok_psoc_creator\\robotics_1\\se"
+ 808      6F626F67 
+ 808      726F6B5C 
+ 808      726F626F 
+ 808      67726F6B 
+ 809 0213 72766F73 		.ascii	"rvos.cydsn\000"
+ 809      2E637964 
+ 809      736E00
+ 810              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

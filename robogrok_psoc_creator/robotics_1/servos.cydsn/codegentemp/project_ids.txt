@@ -1,0 +1,8 @@
+C:\robogrok\robogrok_psoc_creator\robotics_1\introduction.cydsn\introduction.cyprj|06d57196-523d-4d6c-a277-e2b33f927933
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|6721281d-cc9b-4283-9cd7-578de0864e1a
+E:\Personal Files\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|57271863-3e2a-4538-835b-00b0034120d5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ed2afa5a-b5b3-4dbc-a9d4-4c52dcfbae13
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1832769c-5d58-4995-8a6e-896c0d79e783
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a83b8c3a-c89d-4a27-92d6-108cc16f48ee
+C:\robogrok\robogrok_psoc_creator\robotics_1\lcd_example.cydsn\lcd_example.cyprj|4093ade6-a9cd-4ff6-b270-548fd8c5cb9a
+C:\robogrok\robogrok_psoc_creator\robotics_1\servos.cydsn\servos.cyprj|760b4dfc-8693-4a6c-9a04-d9ba2f38a778

@@ -1,12 +1,12 @@
 import numpy as np
 
-a1 = 1 # length of link a1 in cm
-a2 = 1 # length of link a2 in cm
-a3 = 1
-a4 = 1
+a1 = 5 # length of link a1 in cm
+a2 = 6 # length of link a2 in cm, from center of joint 1 to center of joint 2 only in horizontal direction
+a3 = 5.5
+a4 = 5 # from center of joint 2 to the center of the marker tip
 
-theta_1 = 10 # angle in degrees
-theta_2 = 70 # angle in degrees
+theta_1 = 30 # angle in degrees
+theta_2 = 90 # angle in degrees
 
 theta_1 = (theta_1 / 180.0) * np.pi # converting theta 1 to radians
 theta_2 = (theta_2 / 180.0) * np.pi
