@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="robotics_1\servos\Source Files\main.c">
+<ExpandedNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction\TopDesign</v>
+<v>robotics_1\introduction\introduction.cydwr\Pins</v>
+<v>robotics_1\introduction\introduction.cydwr\Analog</v>
+<v>robotics_1\introduction\introduction.cydwr\Clocks</v>
+<v>robotics_1\introduction\introduction.cydwr\Interrupts</v>
+<v>robotics_1\introduction\introduction.cydwr\DMA</v>
+<v>robotics_1\introduction\introduction.cydwr\System</v>
+<v>robotics_1\introduction\introduction.cydwr\Directives</v>
+<v>robotics_1\introduction\introduction.cydwr\Flash Security</v>
+<v>robotics_1\introduction\introduction.cydwr\EEPROM</v>
+<v>robotics_1\introduction\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\introduction\Source Files</v>
+<v>robotics_1\introduction\Source Files\main.c</v>
+<v>robotics_1\introduction\Generated_Source\PSoC5</v>
+<v>robotics_1\lcd_example\TopDesign</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Pins</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Analog</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Clocks</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Interrupts</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\DMA</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\System</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Directives</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\Flash Security</v>
+<v>robotics_1\lcd_example\lcd_example.cydwr\EEPROM</v>
+<v>robotics_1\lcd_example\Header Files</v>
+<v>robotics_1\lcd_example\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\lcd_example\Source Files</v>
+<v>robotics_1\lcd_example\Source Files\main.c</v>
+<v>robotics_1\lcd_example\Generated_Source\PSoC5</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\TopDesign</v>
+<v>robotics_1\servos\servos.cydwr</v>
+<v>robotics_1\servos\servos.cydwr\Pins</v>
+<v>robotics_1\servos\servos.cydwr\Analog</v>
+<v>robotics_1\servos\servos.cydwr\Clocks</v>
+<v>robotics_1\servos\servos.cydwr\Interrupts</v>
+<v>robotics_1\servos\servos.cydwr\DMA</v>
+<v>robotics_1\servos\servos.cydwr\System</v>
+<v>robotics_1\servos\servos.cydwr\Directives</v>
+<v>robotics_1\servos\servos.cydwr\Flash Security</v>
+<v>robotics_1\servos\servos.cydwr\EEPROM</v>
+<v>robotics_1\servos\Header Files</v>
+<v>robotics_1\servos\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\servos\Source Files</v>
+<v>robotics_1\servos\Source Files\main.c</v>
+<v>robotics_1\servos\Generated_Source</v>
+<v>robotics_1\servos\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\TopDesign</v>
+<v>robotics_1\servos\servos.cydwr</v>
+<v>robotics_1\servos\servos.cydwr\Pins</v>
+<v>robotics_1\servos\servos.cydwr\Analog</v>
+<v>robotics_1\servos\servos.cydwr\Clocks</v>
+<v>robotics_1\servos\servos.cydwr\Interrupts</v>
+<v>robotics_1\servos\servos.cydwr\DMA</v>
+<v>robotics_1\servos\servos.cydwr\System</v>
+<v>robotics_1\servos\servos.cydwr\Directives</v>
+<v>robotics_1\servos\servos.cydwr\Flash Security</v>
+<v>robotics_1\servos\servos.cydwr\EEPROM</v>
+<v>robotics_1\servos\Header Files</v>
+<v>robotics_1\servos\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\servos\Source Files</v>
+<v>robotics_1\servos\Source Files\main.c</v>
+<v>robotics_1\servos\Generated_Source</v>
+<v>robotics_1\servos\Generated_Source\PSoC5</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\Clock_1</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cy_boot</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\PWM_1</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\servo_1</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\servo_2</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevice.h</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfitter.h</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\cymetadata.c</v>
+<v>robotics_1\servos\Generated_Source\PSoC5\project.h</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\TopDesign</v>
+<v>robotics_1\introduction\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\TopDesign</v>
+<v>robotics_1\lcd_example\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\TopDesign</v>
+<v>robotics_1\servos\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\TopDesign</v>
+<v>robotics_1\introduction\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\TopDesign</v>
+<v>robotics_1\lcd_example\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\TopDesign</v>
+<v>robotics_1\servos\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\CortexM3</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.elf</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.hex</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.map</v>
+<v>robotics_1\introduction\introduction.gpdsc</v>
+<v>robotics_1\introduction\introduction.rpt</v>
+<v>robotics_1\introduction\introduction_timing.html</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\CortexM3</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.elf</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.hex</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.map</v>
+<v>robotics_1\lcd_example\lcd_example.gpdsc</v>
+<v>robotics_1\lcd_example\lcd_example.rpt</v>
+<v>robotics_1\lcd_example\lcd_example_timing.html</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\CortexM3</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\servo_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\servo_2.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.elf</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.hex</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.map</v>
+<v>robotics_1\servos\servos.gpdsc</v>
+<v>robotics_1\servos\servos.rpt</v>
+<v>robotics_1\servos\servos_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\CortexM3</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.elf</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.hex</v>
+<v>robotics_1\introduction\CortexM3\ARM_GCC_541\Debug\introduction.map</v>
+<v>robotics_1\introduction\introduction.gpdsc</v>
+<v>robotics_1\introduction\introduction.rpt</v>
+<v>robotics_1\introduction\introduction_timing.html</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\CortexM3</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.elf</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.hex</v>
+<v>robotics_1\lcd_example\CortexM3\ARM_GCC_541\Debug\lcd_example.map</v>
+<v>robotics_1\lcd_example\lcd_example.gpdsc</v>
+<v>robotics_1\lcd_example\lcd_example.rpt</v>
+<v>robotics_1\lcd_example\lcd_example_timing.html</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\CortexM3</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\servo_1.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\Listing Files\servo_2.lst</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.elf</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.hex</v>
+<v>robotics_1\servos\CortexM3\ARM_GCC_541\Debug\servos.map</v>
+<v>robotics_1\servos\servos.gpdsc</v>
+<v>robotics_1\servos\servos.rpt</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
+<v>robotics_1\introduction\System Reference Guides</v>
+<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\introduction\cy_pins_v2_20</v>
+<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
+<v>robotics_1\lcd_example\System Reference Guides</v>
+<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\servos\CY8C58LP Family Datasheet</v>
+<v>robotics_1\servos\System Reference Guides</v>
+<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
+<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
+<v>robotics_1\servos\cy_pins_v2_20</v>
+<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\servos\PWM_v3_30.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>robotics_1</v>
+<v>robotics_1\introduction</v>
+<v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
+<v>robotics_1\introduction\System Reference Guides</v>
+<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\introduction\cy_pins_v2_20</v>
+<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\lcd_example</v>
+<v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
+<v>robotics_1\lcd_example\System Reference Guides</v>
+<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
+<v>robotics_1\servos</v>
+<v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\servos\CY8C58LP Family Datasheet</v>
+<v>robotics_1\servos\System Reference Guides</v>
+<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
+<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
+<v>robotics_1\servos\cy_pins_v2_20</v>
+<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\servos\PWM_v3_30.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\introduction.cydsn\main.c" />
+<name v=".\lcd_example.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 655" SelectedTabbedMdiWindow="b813382e-0362-4bda-b633-a6d2f3f6db77"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\introduction.cydsn\main.c" Guid="d2a85ea3-c8d0-4037-88b9-01eb98fa0c5b" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\lcd_example.cydsn\main.c" Guid="b813382e-0362-4bda-b633-a6d2f3f6db77" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
