@@ -396,6 +396,7 @@ LOAD .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
 LOAD .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
 LOAD .\CortexM3\ARM_GCC_541\Debug\servos.a
 LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a
 END GROUP
 START GROUP
 LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
@@ -799,44 +800,44 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x38d0
+.debug_info     0x00000000     0x3967
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x20f .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_info    0x0000020f      0x47f .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x0000068e      0x124 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x000007b2      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x00000b6d      0x3a0 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
- .debug_info    0x00000f0d     0x1374 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
- .debug_info    0x00002281      0xa2a .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
- .debug_info    0x00002cab       0x88 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
- .debug_info    0x00002d33      0x64d .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
- .debug_info    0x00003380      0x550 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
+ .debug_info    0x00000000      0x2a6 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x000002a6      0x47f .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000725      0x124 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000849      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00000c04      0x3a0 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
+ .debug_info    0x00000fa4     0x1374 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
+ .debug_info    0x00002318      0xa2a .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
+ .debug_info    0x00002d42       0x88 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
+ .debug_info    0x00002dca      0x64d .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
+ .debug_info    0x00003417      0x550 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
 
-.debug_abbrev   0x00000000      0xdcc
+.debug_abbrev   0x00000000      0xdea
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x108 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_abbrev  0x00000108      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_abbrev  0x00000306       0x5d .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x00000363      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_abbrev  0x0000054b      0x133 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
- .debug_abbrev  0x0000067e      0x254 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
- .debug_abbrev  0x000008d2      0x1ab .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
- .debug_abbrev  0x00000a7d       0x14 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00000a91      0x1a7 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
- .debug_abbrev  0x00000c38      0x194 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
+ .debug_abbrev  0x00000000      0x126 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x00000126      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000324       0x5d .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000381      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x00000569      0x133 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
+ .debug_abbrev  0x0000069c      0x254 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
+ .debug_abbrev  0x000008f0      0x1ab .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
+ .debug_abbrev  0x00000a9b       0x14 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000aaf      0x1a7 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
+ .debug_abbrev  0x00000c56      0x194 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
 
-.debug_line     0x00000000     0x18f1
+.debug_line     0x00000000     0x18f3
  *(.debug_line)
- .debug_line    0x00000000      0x19e .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x0000019e      0x1d5 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x00000373      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000004b4      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x000006e8      0x1ac .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
- .debug_line    0x00000894      0x816 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
- .debug_line    0x000010aa      0x367 .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
- .debug_line    0x00001411       0x66 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
- .debug_line    0x00001477      0x21a .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
- .debug_line    0x00001691      0x260 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
+ .debug_line    0x00000000      0x1a0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000001a0      0x1d5 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000375      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x000004b6      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x000006ea      0x1ac .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
+ .debug_line    0x00000896      0x816 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
+ .debug_line    0x000010ac      0x367 .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
+ .debug_line    0x00001413       0x66 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyBootAsmGnu.o)
+ .debug_line    0x00001479      0x21a .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
+ .debug_line    0x00001693      0x260 .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
 
 .debug_frame    0x00000000     0x1054
  *(.debug_frame)
@@ -854,25 +855,25 @@ END GROUP
  .debug_frame   0x0000100c       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00001034       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x14ae
+.debug_str      0x00000000     0x14bd
  *(.debug_str)
- .debug_str     0x00000000      0x1d0 .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x21e (size before relaxing)
- .debug_str     0x000001d0      0x187 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x00000000      0x1df .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x22d (size before relaxing)
+ .debug_str     0x000001df      0x187 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x307 (size before relaxing)
- .debug_str     0x00000357       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00000366       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                                 0x1dc (size before relaxing)
- .debug_str     0x000003d6      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_str     0x000003e5      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
                                 0x302 (size before relaxing)
- .debug_str     0x0000051a      0x1b8 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
+ .debug_str     0x00000529      0x1b8 .\CortexM3\ARM_GCC_541\Debug\servos.a(PWM_1.o)
                                 0x37f (size before relaxing)
- .debug_str     0x000006d2      0x810 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
+ .debug_str     0x000006e1      0x810 .\CortexM3\ARM_GCC_541\Debug\servos.a(CyLib.o)
                                 0xa3f (size before relaxing)
- .debug_str     0x00000ee2      0x365 .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
+ .debug_str     0x00000ef1      0x365 .\CortexM3\ARM_GCC_541\Debug\servos.a(cyPm.o)
                                 0x72b (size before relaxing)
- .debug_str     0x00001247      0x1bb .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
+ .debug_str     0x00001256      0x1bb .\CortexM3\ARM_GCC_541\Debug\servos.a(CyFlash.o)
                                 0x3b8 (size before relaxing)
- .debug_str     0x00001402       0xac .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
+ .debug_str     0x00001411       0xac .\CortexM3\ARM_GCC_541\Debug\servos.a(CySpc.o)
                                 0x330 (size before relaxing)
 
 .debug_loc      0x00000000     0x1a59
