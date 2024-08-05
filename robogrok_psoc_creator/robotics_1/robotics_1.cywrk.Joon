@@ -384,6 +384,7 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\servos.cydsn\main.c" />
+<name v=".\sensors.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -391,7 +392,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 536" SelectedTabbedMdiWindow="b002155a-6b37-4db9-bf88-337be7a1a5a6"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\servos.cydsn\main.c" Guid="b002155a-6b37-4db9-bf88-337be7a1a5a6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 536" SelectedTabbedMdiWindow="84098746-8dc5-4a9a-bbf0-b7b51a5de73d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\servos.cydsn\main.c" Guid="b002155a-6b37-4db9-bf88-337be7a1a5a6" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\main.c" Guid="84098746-8dc5-4a9a-bbf0-b7b51a5de73d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
