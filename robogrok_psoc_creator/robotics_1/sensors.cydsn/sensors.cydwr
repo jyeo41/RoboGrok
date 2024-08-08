@@ -256,6 +256,7 @@
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="switch_1" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="analog_1" />
       <Data key="e468edd3-74f7-4079-af3a-63a1f42cf96d/ed092b9b-d398-4703-be89-cebf998501f6" value="lcd_char_1_LCDPort" />
+      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="motor" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3383,6 +3384,11 @@
       </Group>
       <Group key="6">
         <Data key="Port Format" value="2,6" />
+      </Group>
+    </Group>
+    <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
+      <Group key="0">
+        <Data key="Port Format" value="1,2" />
       </Group>
     </Group>
   </Group>

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="robotics_1\sensors\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>robotics_1</v>
 <v>robotics_1\introduction\TopDesign</v>
@@ -197,6 +197,7 @@
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_LCDPort.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_PM.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16_PM.lst</v>
