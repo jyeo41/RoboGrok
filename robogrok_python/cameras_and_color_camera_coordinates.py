@@ -13,6 +13,25 @@ cap = cv2.VideoCapture(0)   # our camera variable and each camera connected to o
 
 centimeters_to_pixels = 11.9 / 640.0    # 11.9cm width for camera FOV and 640 pixels horizontally
 
+rotation_180_x = [ [1, 0, 0],
+                   [0, np.cos(np.pi), -np.sin(np.pi)],
+                   [0, np.sin(np.pi), np.cos(np.pi)] ]  # needs to be np.pi because we are using radians
+
+negative_93_radians = (-93.0 / 180.0) * np.pi
+
+rotation_neg_93_z = [ [np.cos(negative_93_radians), -np.sin(negative_93_radians), 0],
+                       [np.sin(negative_93_radians), np.cos(negative_93_radians), 0],
+                       [0, 0, 1] ]
+
+R0_C = np.dot(rotation_180_x, rotation_neg_93_z)
+d0_C = [ [-1.9],
+         [-0.37],
+         [0] ]
+
+H0_C = np.concatenate((R0_C, d0_C), 1)
+H0_C = np.concatenate((H0_C, [ [0, 0, 0, 1] ]), 0)
+
+# print(np.matrix(H0_C))
 
 while(1):
     # read() reads the next frame coming from the video camera
@@ -58,6 +77,9 @@ while(1):
     column_mult = np.multiply(column_sums, column_numbers)  # does ELEMENT WISE multiplication with vectors/matrices
     total = np.sum(column_mult) # column mult is a vector, only one axis so no need for second parameter
     matrix_sum = np.sum(np.sum(black_white))   # sum of all the pixels in red only matrix
+
+    # print("Matrix sum: ")
+    # print(matrix_sum)
     column_location = total / matrix_sum    # column center of the bright object in the image
 
     # multiply by pixels to get units in centimeters.
@@ -77,7 +99,17 @@ while(1):
     # remember, column_location is in unit pixels.
     y_location = row_location * centimeters_to_pixels
 
-    print(x_location, y_location)
+    point_camera = [ [x_location],
+                     [y_location],
+                     [0],
+                     [1] ]
+    
+    point_base_grid = np.dot(H0_C, point_camera)
+
+    x0 = point_base_grid[0]
+    y0 = point_base_grid[1]
+
+    print(x0, y0)
 
     # Note: To find the Y position up and down, we have to do the same calculation for the rows as well.
     #   The value this print statement gives us is in PIXELS and only in the X position. The unit pixels is our
