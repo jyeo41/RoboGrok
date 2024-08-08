@@ -44,6 +44,9 @@
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\analog_1_aliases.h" value="HEADER;;;;;analog_1" />
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\analog_1.c" value="SOURCE_C;CortexM3;;;;analog_1" />
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\analog_1.h" value="HEADER;;;;;analog_1" />
+  <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\motor_aliases.h" value="HEADER;;;;;motor" />
+  <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\motor.c" value="SOURCE_C;CortexM3;;;;motor" />
+  <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\motor.h" value="HEADER;;;;;motor" />
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\lcd_char_1_LCDPort_aliases.h" value="HEADER;;;;;lcd_char_1_LCDPort" />
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\lcd_char_1_LCDPort.c" value="SOURCE_C;CortexM3;;;;lcd_char_1_LCDPort" />
   <file name="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\codegentemp\lcd_char_1_LCDPort.h" value="HEADER;;;;;lcd_char_1_LCDPort" />
