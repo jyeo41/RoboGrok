@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: motor.h  
+* File Name: motor_1.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_motor_ALIASES_H) /* Pins motor_ALIASES_H */
-#define CY_PINS_motor_ALIASES_H
+#if !defined(CY_PINS_motor_1_ALIASES_H) /* Pins motor_1_ALIASES_H */
+#define CY_PINS_motor_1_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define motor_0			(motor__0__PC)
-#define motor_0_INTR	((uint16)((uint16)0x0001u << motor__0__SHIFT))
+#define motor_1_0			(motor_1__0__PC)
+#define motor_1_0_INTR	((uint16)((uint16)0x0001u << motor_1__0__SHIFT))
 
-#define motor_INTR_ALL	 ((uint16)(motor_0_INTR))
+#define motor_1_INTR_ALL	 ((uint16)(motor_1_0_INTR))
 
-#endif /* End Pins motor_ALIASES_H */
+#endif /* End Pins motor_1_ALIASES_H */
 
 
 /* [] END OF FILE */
