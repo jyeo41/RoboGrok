@@ -1,7 +1,26 @@
---------------- Build Started: 08/08/2024 21:02:43 Project: sensors, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 08/08/2024 22:06:13 Project: sensors, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
-arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\sensors.a .\CortexM3\ARM_GCC_541\Debug\switch_1.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1_PM.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1_LCDPort.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_INT.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_PM.o .\CortexM3\ARM_GCC_541\Debug\c1.o .\CortexM3\ARM_GCC_541\Debug\c2.o .\CortexM3\ARM_GCC_541\Debug\Clock_1.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_isr.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_Cnt16.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_Cnt16_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_INT.o .\CortexM3\ARM_GCC_541\Debug\analog_1.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR_INT.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_IntClock.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_TempBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_FinalBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_IRQ.o .\CortexM3\ARM_GCC_541\Debug\motor.o .\CortexM3\ARM_GCC_541\Debug\PWM_1.o .\CortexM3\ARM_GCC_541\Debug\PWM_1_PM.o .\CortexM3\ARM_GCC_541\Debug\Clock_2.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+main.c: In function 'main':
+main.c:12:9: warning: unused variable 'compare' [-Wunused-variable]
+     int compare = 0;
+         ^
+main.c:10:11: warning: unused variable 'speed' [-Wunused-variable]
+     float speed = 0;
+           ^
+main.c:9:11: warning: unused variable 'counts_per_rev' [-Wunused-variable]
+     float counts_per_rev = 815.5;
+           ^
+main.c:8:9: warning: unused variable 'counter_difference' [-Wunused-variable]
+     int counter_difference = 0;
+         ^
+main.c:7:9: warning: unused variable 'counter2' [-Wunused-variable]
+     int counter2 = 0;
+         ^
+main.c:6:9: warning: unused variable 'counter1' [-Wunused-variable]
+     int counter1 = 0;
+         ^
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\sensors.a .\CortexM3\ARM_GCC_541\Debug\switch_1.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1_PM.o .\CortexM3\ARM_GCC_541\Debug\lcd_char_1_LCDPort.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_INT.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_PM.o .\CortexM3\ARM_GCC_541\Debug\c1.o .\CortexM3\ARM_GCC_541\Debug\c2.o .\CortexM3\ARM_GCC_541\Debug\Clock_1.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_isr.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_Cnt16.o .\CortexM3\ARM_GCC_541\Debug\quaddec_1_Cnt16_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_INT.o .\CortexM3\ARM_GCC_541\Debug\analog_1.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR_INT.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_SAR_PM.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_IntClock.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_TempBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_FinalBuf_dma.o .\CortexM3\ARM_GCC_541\Debug\ADC_SAR_Seq_1_IRQ.o .\CortexM3\ARM_GCC_541\Debug\PWM_1.o .\CortexM3\ARM_GCC_541\Debug\PWM_1_PM.o .\CortexM3\ARM_GCC_541\Debug\Clock_2.o .\CortexM3\ARM_GCC_541\Debug\motor_1.o .\CortexM3\ARM_GCC_541\Debug\motor_2.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\sensors.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\CortexM3\ARM_GCC_541\Debug\sensors.elf .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\sensors.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/sensors.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\CortexM3\ARM_GCC_541\Debug\sensors.elf --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
@@ -9,6 +28,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\CortexM3\ARM_GCC_541\Debug\sensors.elf
-Flash used: 6686 of 262144 bytes (2.6%).
+Flash used: 4062 of 262144 bytes (1.5%).
 SRAM used: 2577 of 65536 bytes (3.9%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 08/08/2024 21:02:43 ---------------
+--------------- Build Succeeded: 08/08/2024 22:06:14 ---------------

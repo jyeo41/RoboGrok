@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: motor.c  
+* File Name: motor_2.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "motor.h"
+#include "motor_2.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 motor__PORT == 15 && ((motor__MASK & 0xC0) != 0))
+	 motor_2__PORT == 15 && ((motor_2__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: motor_Write
+* Function Name: motor_2_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet motor_SUT.c usage_motor_Write
+*  \snippet motor_2_SUT.c usage_motor_2_Write
 *******************************************************************************/
-void motor_Write(uint8 value)
+void motor_2_Write(uint8 value)
 {
-    uint8 staticBits = (motor_DR & (uint8)(~motor_MASK));
-    motor_DR = staticBits | ((uint8)(value << motor_SHIFT) & motor_MASK);
+    uint8 staticBits = (motor_2_DR & (uint8)(~motor_2_MASK));
+    motor_2_DR = staticBits | ((uint8)(value << motor_2_SHIFT) & motor_2_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: motor_SetDriveMode
+* Function Name: motor_2_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void motor_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet motor_SUT.c usage_motor_SetDriveMode
+*  \snippet motor_2_SUT.c usage_motor_2_SetDriveMode
 *******************************************************************************/
-void motor_SetDriveMode(uint8 mode)
+void motor_2_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(motor_0, mode);
+	CyPins_SetPinDriveMode(motor_2_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: motor_Read
+* Function Name: motor_2_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void motor_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet motor_SUT.c usage_motor_Read  
+*  \snippet motor_2_SUT.c usage_motor_2_Read  
 *******************************************************************************/
-uint8 motor_Read(void)
+uint8 motor_2_Read(void)
 {
-    return (motor_PS & motor_MASK) >> motor_SHIFT;
+    return (motor_2_PS & motor_2_MASK) >> motor_2_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: motor_ReadDataReg
+* Function Name: motor_2_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 motor_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred motor_Read() API because the 
-* motor_ReadDataReg() reads the data register instead of the status 
+* preferred motor_2_Read() API because the 
+* motor_2_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 motor_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet motor_SUT.c usage_motor_ReadDataReg 
+*  \snippet motor_2_SUT.c usage_motor_2_ReadDataReg 
 *******************************************************************************/
-uint8 motor_ReadDataReg(void)
+uint8 motor_2_ReadDataReg(void)
 {
-    return (motor_DR & motor_MASK) >> motor_SHIFT;
+    return (motor_2_DR & motor_2_MASK) >> motor_2_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(motor_INTSTAT) 
+#if defined(motor_2_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: motor_SetInterruptMode
+    * Function Name: motor_2_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 motor_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use motor_INTR_ALL to configure the
+    *  component. Or you may use motor_2_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - motor_0_INTR       (First pin in the list)
-    *  - motor_1_INTR       (Second pin in the list)
+    *  - motor_2_0_INTR       (First pin in the list)
+    *  - motor_2_1_INTR       (Second pin in the list)
     *  - ...
-    *  - motor_INTR_ALL     (All pins in Pins component)
+    *  - motor_2_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 motor_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet motor_SUT.c usage_motor_SetInterruptMode
+    *  \snippet motor_2_SUT.c usage_motor_2_SetInterruptMode
     *******************************************************************************/
-    void motor_SetInterruptMode(uint16 position, uint16 mode)
+    void motor_2_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & motor_0_INTR) != 0u) 
+		if((position & motor_2_0_INTR) != 0u) 
 		{ 
-			 motor_0_INTTYPE_REG = (uint8)mode; 
+			 motor_2_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: motor_ClearInterrupt
+    * Function Name: motor_2_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 motor_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet motor_SUT.c usage_motor_ClearInterrupt
+    *  \snippet motor_2_SUT.c usage_motor_2_ClearInterrupt
     *******************************************************************************/
-    uint8 motor_ClearInterrupt(void)
+    uint8 motor_2_ClearInterrupt(void)
     {
-        return (motor_INTSTAT & motor_MASK) >> motor_SHIFT;
+        return (motor_2_INTSTAT & motor_2_MASK) >> motor_2_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

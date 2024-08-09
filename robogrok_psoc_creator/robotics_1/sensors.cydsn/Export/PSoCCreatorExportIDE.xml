@@ -137,14 +137,17 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_SAR_Seq_1_FinalBuf_dma.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_SAR_Seq_1_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_SAR_Seq_1_IRQ.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\Export\ARM_GCC_Generic">

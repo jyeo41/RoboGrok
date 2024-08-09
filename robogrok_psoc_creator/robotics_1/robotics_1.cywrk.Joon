@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="robotics_1\sensors\Source Files\main.c">
 <ExpandedNodeIds>
 <v>robotics_1</v>
 <v>robotics_1\introduction\TopDesign</v>
@@ -198,7 +198,8 @@
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_LCDPort.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_PM.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor.lst</v>
+<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_1.lst</v>
+<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_2.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16_PM.lst</v>
@@ -304,39 +305,18 @@
 <v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
 <v>robotics_1\introduction\System Reference Guides</v>
-<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\introduction\cy_pins_v2_20</v>
-<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
 <v>robotics_1\lcd_example\System Reference Guides</v>
-<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
 <v>robotics_1\sensors</v>
 <v>robotics_1\sensors\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\sensors\CY8C58LP Family Datasheet</v>
 <v>robotics_1\sensors\System Reference Guides</v>
-<v>robotics_1\sensors\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\sensors\ADC_SAR_SEQ_v2_10.pdf</v>
-<v>robotics_1\sensors\CharLCD_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_clock_v2_20</v>
-<v>robotics_1\sensors\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_constant_v1_0.pdf</v>
-<v>robotics_1\sensors\cy_pins_v2_20</v>
-<v>robotics_1\sensors\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>robotics_1\sensors\PWM_v3_30.pdf</v>
-<v>robotics_1\sensors\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\servos\CY8C58LP Family Datasheet</v>
 <v>robotics_1\servos\System Reference Guides</v>
-<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
-<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
-<v>robotics_1\servos\cy_pins_v2_20</v>
-<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>robotics_1\servos\PWM_v3_30.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>robotics_1</v>
@@ -344,39 +324,18 @@
 <v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
 <v>robotics_1\introduction\System Reference Guides</v>
-<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\introduction\cy_pins_v2_20</v>
-<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
 <v>robotics_1\lcd_example\System Reference Guides</v>
-<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
 <v>robotics_1\sensors</v>
 <v>robotics_1\sensors\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\sensors\CY8C58LP Family Datasheet</v>
 <v>robotics_1\sensors\System Reference Guides</v>
-<v>robotics_1\sensors\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\sensors\ADC_SAR_SEQ_v2_10.pdf</v>
-<v>robotics_1\sensors\CharLCD_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_clock_v2_20</v>
-<v>robotics_1\sensors\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_constant_v1_0.pdf</v>
-<v>robotics_1\sensors\cy_pins_v2_20</v>
-<v>robotics_1\sensors\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>robotics_1\sensors\PWM_v3_30.pdf</v>
-<v>robotics_1\sensors\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\servos\CY8C58LP Family Datasheet</v>
 <v>robotics_1\servos\System Reference Guides</v>
-<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
-<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
-<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
-<v>robotics_1\servos\cy_pins_v2_20</v>
-<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>robotics_1\servos\PWM_v3_30.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -391,8 +350,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\servos.cydsn\main.c" />
 <name v=".\sensors.cydsn\main.c" />
+<name v=".\sensors.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\sensors.cydsn\sensors.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -400,7 +360,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 536" SelectedTabbedMdiWindow="84098746-8dc5-4a9a-bbf0-b7b51a5de73d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\servos.cydsn\main.c" Guid="b002155a-6b37-4db9-bf88-337be7a1a5a6" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\main.c" Guid="84098746-8dc5-4a9a-bbf0-b7b51a5de73d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 605" SelectedTabbedMdiWindow="84098746-8dc5-4a9a-bbf0-b7b51a5de73d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\main.c" Guid="84098746-8dc5-4a9a-bbf0-b7b51a5de73d" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\TopDesign\TopDesign.cysch" Guid="35763339-7f3e-46b2-9538-4dba587c7395" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\sensors.cydwr" Guid="1cd71dd8-4e68-4b03-9d15-044d3857a114" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
