@@ -34,6 +34,8 @@
 #include "analog_1.h"
 #include "motor_aliases.h"
 #include "motor.h"
+#include "PWM_1.h"
+#include "Clock_2.h"
 #include "lcd_char_1_LCDPort_aliases.h"
 #include "lcd_char_1_LCDPort.h"
 #include "quaddec_1_isr.h"

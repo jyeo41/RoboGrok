@@ -182,6 +182,7 @@
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -281,6 +282,7 @@
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -288,7 +290,6 @@
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
 <v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -319,9 +320,12 @@
 <v>robotics_1\sensors\System Reference Guides\cy_boot_v6_0</v>
 <v>robotics_1\sensors\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>robotics_1\sensors\CharLCD_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_clock_v2_20.pdf</v>
+<v>robotics_1\sensors\cy_clock_v2_20</v>
+<v>robotics_1\sensors\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>robotics_1\sensors\cy_constant_v1_0.pdf</v>
 <v>robotics_1\sensors\cy_pins_v2_20</v>
 <v>robotics_1\sensors\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\sensors\PWM_v3_30.pdf</v>
 <v>robotics_1\sensors\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
@@ -356,9 +360,12 @@
 <v>robotics_1\sensors\System Reference Guides\cy_boot_v6_0</v>
 <v>robotics_1\sensors\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>robotics_1\sensors\CharLCD_v2_20.pdf</v>
-<v>robotics_1\sensors\cy_clock_v2_20.pdf</v>
+<v>robotics_1\sensors\cy_clock_v2_20</v>
+<v>robotics_1\sensors\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>robotics_1\sensors\cy_constant_v1_0.pdf</v>
 <v>robotics_1\sensors\cy_pins_v2_20</v>
 <v>robotics_1\sensors\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\sensors\PWM_v3_30.pdf</v>
 <v>robotics_1\sensors\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
