@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="robotics_1\sensors\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="robotics_1\motion_control\Source Files\main.c">
 <ExpandedNodeIds>
 <v>robotics_1</v>
 <v>robotics_1\introduction\TopDesign</v>
@@ -50,23 +50,23 @@
 <v>robotics_1\lcd_example\Source Files\main.c</v>
 <v>robotics_1\lcd_example\Generated_Source</v>
 <v>robotics_1\lcd_example\Generated_Source\PSoC5</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\TopDesign</v>
-<v>robotics_1\sensors\sensors.cydwr</v>
-<v>robotics_1\sensors\sensors.cydwr\Pins</v>
-<v>robotics_1\sensors\sensors.cydwr\Analog</v>
-<v>robotics_1\sensors\sensors.cydwr\Clocks</v>
-<v>robotics_1\sensors\sensors.cydwr\Interrupts</v>
-<v>robotics_1\sensors\sensors.cydwr\DMA</v>
-<v>robotics_1\sensors\sensors.cydwr\System</v>
-<v>robotics_1\sensors\sensors.cydwr\Directives</v>
-<v>robotics_1\sensors\sensors.cydwr\Flash Security</v>
-<v>robotics_1\sensors\sensors.cydwr\EEPROM</v>
-<v>robotics_1\sensors\Header Files</v>
-<v>robotics_1\sensors\Header Files\cyapicallbacks.h</v>
-<v>robotics_1\sensors\Source Files</v>
-<v>robotics_1\sensors\Source Files\main.c</v>
-<v>robotics_1\sensors\Generated_Source\PSoC5</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\TopDesign</v>
+<v>robotics_1\motion_control\motion_control.cydwr</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Pins</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Analog</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Clocks</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Interrupts</v>
+<v>robotics_1\motion_control\motion_control.cydwr\DMA</v>
+<v>robotics_1\motion_control\motion_control.cydwr\System</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Directives</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Flash Security</v>
+<v>robotics_1\motion_control\motion_control.cydwr\EEPROM</v>
+<v>robotics_1\motion_control\Header Files</v>
+<v>robotics_1\motion_control\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\motion_control\Source Files</v>
+<v>robotics_1\motion_control\Source Files\main.c</v>
+<v>robotics_1\motion_control\Generated_Source\PSoC5</v>
 <v>robotics_1\servos\TopDesign</v>
 <v>robotics_1\servos\servos.cydwr</v>
 <v>robotics_1\servos\servos.cydwr\Pins</v>
@@ -88,23 +88,23 @@
 <v>robotics_1</v>
 <v>robotics_1\introduction</v>
 <v>robotics_1\lcd_example</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\TopDesign</v>
-<v>robotics_1\sensors\sensors.cydwr</v>
-<v>robotics_1\sensors\sensors.cydwr\Pins</v>
-<v>robotics_1\sensors\sensors.cydwr\Analog</v>
-<v>robotics_1\sensors\sensors.cydwr\Clocks</v>
-<v>robotics_1\sensors\sensors.cydwr\Interrupts</v>
-<v>robotics_1\sensors\sensors.cydwr\DMA</v>
-<v>robotics_1\sensors\sensors.cydwr\System</v>
-<v>robotics_1\sensors\sensors.cydwr\Directives</v>
-<v>robotics_1\sensors\sensors.cydwr\Flash Security</v>
-<v>robotics_1\sensors\sensors.cydwr\EEPROM</v>
-<v>robotics_1\sensors\Header Files</v>
-<v>robotics_1\sensors\Header Files\cyapicallbacks.h</v>
-<v>robotics_1\sensors\Source Files</v>
-<v>robotics_1\sensors\Source Files\main.c</v>
-<v>robotics_1\sensors\Generated_Source</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\TopDesign</v>
+<v>robotics_1\motion_control\motion_control.cydwr</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Pins</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Analog</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Clocks</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Interrupts</v>
+<v>robotics_1\motion_control\motion_control.cydwr\DMA</v>
+<v>robotics_1\motion_control\motion_control.cydwr\System</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Directives</v>
+<v>robotics_1\motion_control\motion_control.cydwr\Flash Security</v>
+<v>robotics_1\motion_control\motion_control.cydwr\EEPROM</v>
+<v>robotics_1\motion_control\Header Files</v>
+<v>robotics_1\motion_control\Header Files\cyapicallbacks.h</v>
+<v>robotics_1\motion_control\Source Files</v>
+<v>robotics_1\motion_control\Source Files\main.c</v>
+<v>robotics_1\motion_control\Generated_Source</v>
 <v>robotics_1\servos</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -117,9 +117,9 @@
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\TopDesign</v>
 <v>robotics_1\lcd_example\TopDesign\TopDesign.cysch</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\TopDesign</v>
-<v>robotics_1\sensors\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\TopDesign</v>
+<v>robotics_1\motion_control\TopDesign\TopDesign.cysch</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\TopDesign</v>
 <v>robotics_1\servos\TopDesign\TopDesign.cysch</v>
@@ -132,9 +132,9 @@
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\TopDesign</v>
 <v>robotics_1\lcd_example\TopDesign\TopDesign.cysch</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\TopDesign</v>
-<v>robotics_1\sensors\TopDesign\TopDesign.cysch</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\TopDesign</v>
+<v>robotics_1\motion_control\TopDesign\TopDesign.cysch</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\TopDesign</v>
 <v>robotics_1\servos\TopDesign\TopDesign.cysch</v>
@@ -163,56 +163,46 @@
 <v>robotics_1\lcd_example\lcd_example.gpdsc</v>
 <v>robotics_1\lcd_example\lcd_example.rpt</v>
 <v>robotics_1\lcd_example\lcd_example_timing.html</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\CortexM3</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_FinalBuf_dma.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_INT.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_IntClock.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_IRQ.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR_INT.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_TempBuf_dma.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\analog_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_LCDPort.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_2.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_INT.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_isr.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\switch_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\sensors.elf</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\sensors.hex</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\sensors.map</v>
-<v>robotics_1\sensors\sensors.gpdsc</v>
-<v>robotics_1\sensors\sensors.rpt</v>
-<v>robotics_1\sensors\sensors_timing.html</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\CortexM3</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_LCDPort.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_PM.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\pwm_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\pwm_1_PM.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_Cnt16_PM.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_INT.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_isr.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\quaddec_1_PM.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\motion_control.elf</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\motion_control.hex</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\motion_control.map</v>
+<v>robotics_1\motion_control\motion_control.gpdsc</v>
+<v>robotics_1\motion_control\motion_control.rpt</v>
+<v>robotics_1\motion_control\motion_control_timing.html</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\CortexM3</v>
 <v>robotics_1\servos\CortexM3\ARM_GCC_541</v>
@@ -264,33 +254,33 @@
 <v>robotics_1\lcd_example\lcd_example.gpdsc</v>
 <v>robotics_1\lcd_example\lcd_example.rpt</v>
 <v>robotics_1\lcd_example\lcd_example_timing.html</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\CortexM3</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_FinalBuf_dma.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_INT.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_IntClock.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_IRQ.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR_INT.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_SAR_PM.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_SAR_Seq_1_TempBuf_dma.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\analog_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>robotics_1\sensors\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\CortexM3</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\c1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\c2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_LCDPort.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\lcd_char_1_PM.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_1.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\motor_2.lst</v>
+<v>robotics_1\motion_control\CortexM3\ARM_GCC_541\Debug\Listing Files\pwm_1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -305,18 +295,38 @@
 <v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
 <v>robotics_1\introduction\System Reference Guides</v>
+<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\introduction\cy_pins_v2_20</v>
+<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
 <v>robotics_1\lcd_example\System Reference Guides</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\PSoC 5LP Architecture TRM</v>
-<v>robotics_1\sensors\CY8C58LP Family Datasheet</v>
-<v>robotics_1\sensors\System Reference Guides</v>
+<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\motion_control\CY8C58LP Family Datasheet</v>
+<v>robotics_1\motion_control\System Reference Guides</v>
+<v>robotics_1\motion_control\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\motion_control\CharLCD_v2_20.pdf</v>
+<v>robotics_1\motion_control\cy_clock_v2_20</v>
+<v>robotics_1\motion_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>robotics_1\motion_control\cy_constant_v1_0.pdf</v>
+<v>robotics_1\motion_control\cy_pins_v2_20</v>
+<v>robotics_1\motion_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\motion_control\PWM_v3_30.pdf</v>
+<v>robotics_1\motion_control\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\servos\CY8C58LP Family Datasheet</v>
 <v>robotics_1\servos\System Reference Guides</v>
+<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
+<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
+<v>robotics_1\servos\cy_pins_v2_20</v>
+<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\servos\PWM_v3_30.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>robotics_1</v>
@@ -324,18 +334,38 @@
 <v>robotics_1\introduction\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\introduction\CY8C58LP Family Datasheet</v>
 <v>robotics_1\introduction\System Reference Guides</v>
+<v>robotics_1\introduction\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\introduction\cy_pins_v2_20</v>
+<v>robotics_1\introduction\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>robotics_1\lcd_example</v>
 <v>robotics_1\lcd_example\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\lcd_example\CY8C58LP Family Datasheet</v>
 <v>robotics_1\lcd_example\System Reference Guides</v>
-<v>robotics_1\sensors</v>
-<v>robotics_1\sensors\PSoC 5LP Architecture TRM</v>
-<v>robotics_1\sensors\CY8C58LP Family Datasheet</v>
-<v>robotics_1\sensors\System Reference Guides</v>
+<v>robotics_1\lcd_example\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\lcd_example\CharLCD_v2_20.pdf</v>
+<v>robotics_1\motion_control</v>
+<v>robotics_1\motion_control\PSoC 5LP Architecture TRM</v>
+<v>robotics_1\motion_control\CY8C58LP Family Datasheet</v>
+<v>robotics_1\motion_control\System Reference Guides</v>
+<v>robotics_1\motion_control\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\motion_control\CharLCD_v2_20.pdf</v>
+<v>robotics_1\motion_control\cy_clock_v2_20</v>
+<v>robotics_1\motion_control\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>robotics_1\motion_control\cy_constant_v1_0.pdf</v>
+<v>robotics_1\motion_control\cy_pins_v2_20</v>
+<v>robotics_1\motion_control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\motion_control\PWM_v3_30.pdf</v>
+<v>robotics_1\motion_control\QuadDec_v3_0.pdf</v>
 <v>robotics_1\servos</v>
 <v>robotics_1\servos\PSoC 5LP Architecture TRM</v>
 <v>robotics_1\servos\CY8C58LP Family Datasheet</v>
 <v>robotics_1\servos\System Reference Guides</v>
+<v>robotics_1\servos\System Reference Guides\cy_boot_v6_0</v>
+<v>robotics_1\servos\cy_clock_v2_20.pdf</v>
+<v>robotics_1\servos\cy_constant_v1_0.pdf</v>
+<v>robotics_1\servos\cy_pins_v2_20</v>
+<v>robotics_1\servos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>robotics_1\servos\PWM_v3_30.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -350,9 +380,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\sensors.cydsn\main.c" />
-<name v=".\sensors.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\sensors.cydsn\sensors.cydwr" />
+<name v=".\motion_control.cydsn\main.c" />
+<name v=".\motion_control.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\motion_control.cydsn\motion_control.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -360,7 +390,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 605" SelectedTabbedMdiWindow="84098746-8dc5-4a9a-bbf0-b7b51a5de73d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\main.c" Guid="84098746-8dc5-4a9a-bbf0-b7b51a5de73d" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\TopDesign\TopDesign.cysch" Guid="35763339-7f3e-46b2-9538-4dba587c7395" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\sensors.cydwr" Guid="1cd71dd8-4e68-4b03-9d15-044d3857a114" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 605" SelectedTabbedMdiWindow="6da0aae4-b792-4b8a-b348-70257badc407"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\main.c" Guid="6da0aae4-b792-4b8a-b348-70257badc407" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\TopDesign\TopDesign.cysch" Guid="b8e21b9f-7fea-4005-a9a1-e6cfd71984a4" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\motion_control.cydwr" Guid="39996a3c-1971-4948-b21d-d22401b5d0af" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
