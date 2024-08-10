@@ -380,9 +380,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\sensors.cydsn\main.c" />
-<name v=".\sensors.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\sensors.cydsn\sensors.cydwr" />
+<name v=".\motion_control.cydsn\main.c" />
+<name v=".\motion_control.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\motion_control.cydsn\motion_control.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -390,7 +390,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 605" SelectedTabbedMdiWindow="84098746-8dc5-4a9a-bbf0-b7b51a5de73d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\main.c" Guid="84098746-8dc5-4a9a-bbf0-b7b51a5de73d" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\TopDesign\TopDesign.cysch" Guid="35763339-7f3e-46b2-9538-4dba587c7395" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\sensors.cydsn\sensors.cydwr" Guid="1cd71dd8-4e68-4b03-9d15-044d3857a114" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1412, 605" SelectedTabbedMdiWindow="6da0aae4-b792-4b8a-b348-70257badc407"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bcad1f24-bece-4ecb-a8f9-073294f1c731" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\main.c" Guid="6da0aae4-b792-4b8a-b348-70257badc407" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\TopDesign\TopDesign.cysch" Guid="b8e21b9f-7fea-4005-a9a1-e6cfd71984a4" /><DocumentWindow Key="C:\robogrok\robogrok_psoc_creator\robotics_1\motion_control.cydsn\motion_control.cydwr" Guid="39996a3c-1971-4948-b21d-d22401b5d0af" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
