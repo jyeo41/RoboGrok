@@ -1,0 +1,20 @@
+# PSoC-gitignore
+# https://github.com/SorenHN/PSoC-gitignore
+
+# Userfile
+*.cyprj.*
+*.cywrk.*
+
+# Miscellaneous files
+*.cycdx
+*.gsvd
+*.html
+*.pdf
+*.rpt
+*/ComponentUpdateLog.txt
+
+# Folders
+*codegentemp/
+*CortexM3/
+*Debug/
+*Generated_Source/
