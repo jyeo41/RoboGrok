@@ -24,20 +24,20 @@ int main(void)
             // if we are less than the target position, turn the motor forwards
             if (counter < target_count1)
             {
-                pwm_1_WriteCompare1(83);    // higher compare value means faster rack and pinion speed but more instability
+                pwm_1_WriteCompare1(100);    // higher compare value means faster rack and pinion speed but more instability
                 pwm_1_WriteCompare2(0);
             }
             else if (counter > target_count1) // if we are more than the target position, turn the motor backwards
             {
                 pwm_1_WriteCompare1(0);    // calculated compare value
-                pwm_1_WriteCompare2(83);                
+                pwm_1_WriteCompare2(100);                
             }
             else    // if we are at the desired position, then turn the motor off
             {
                 pwm_1_WriteCompare1(0);
                 pwm_1_WriteCompare2(0);                
             }
-            CyDelay(1); // wait a millisecond and increment time variable
+            CyDelay(1); // wait a millisecond and increment the time value
             lcd_char_1_ClearDisplay();
             lcd_char_1_Position(0, 0);
             lcd_char_1_PrintNumber(counter);
@@ -52,26 +52,27 @@ int main(void)
             counter = quaddec_1_GetCounter();  // Second count after the motor has been turned on
             
             // if we are less than the target position, turn the motor forwards
-            if (counter < target_count2)
+            // edited to decrease the accuracy for both the if and else if branches to increase stability
+            if (counter < (target_count2 - 10))
             {
-                pwm_1_WriteCompare1(83);
+                pwm_1_WriteCompare1(60);    // from 100 to 60 cmp value means slower motor speed, to increase stability
                 pwm_1_WriteCompare2(0);
             }
-            else if (counter > target_count2) // if we are more than the target position, turn the motor backwards
+            else if (counter > (target_count2 + 10)) // if we are more than the target position, turn the motor backwards
             {
                 pwm_1_WriteCompare1(0); 
-                pwm_1_WriteCompare2(83);                
+                pwm_1_WriteCompare2(60);                
             }
             else    // if we are at the desired position, then turn the motor off
             {
                 pwm_1_WriteCompare1(0);
                 pwm_1_WriteCompare2(0);                
             }
-            CyDelay(1); // wait a millisecond and increment time variable
+            CyDelay(10); // wait 10 milliseconds and increment time variable accordingly, this is to make the jittering more apparent
             lcd_char_1_ClearDisplay();
             lcd_char_1_Position(0, 0);
             lcd_char_1_PrintNumber(counter);
-            time += 1;
+            time += 10;
         }
     }
 }
