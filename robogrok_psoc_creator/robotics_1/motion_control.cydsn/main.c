@@ -7,6 +7,9 @@ int main(void)
     int time;
     int target_count1 = 1000;   // target positions for rack and pinion
     int target_count2 = 2000;
+    int error = 0;  // used to calculate the error difference from current count to target count
+    int speed = 0;  // the proportional speed used for linear control
+    float kp = 3.0; // the control gain constant, higher values means more instability, speed, and accuracy
         
     quaddec_1_Start();
     lcd_char_1_Start();
@@ -20,28 +23,35 @@ int main(void)
         while(time < 5000)
         {
             counter = quaddec_1_GetCounter();  // Second count after the motor has been turned on
+            error = target_count1 - counter;    // the error is the difference of where we want to be, and where we actually are
+
             
             // if we are less than the target position, turn the motor forwards
-            if (counter < target_count1)
+            if (error > 0)
             {
-                pwm_1_WriteCompare1(100);    // higher compare value means faster rack and pinion speed but more instability
+                speed = kp * error;
+                if (speed > 100)
+                {
+                    speed = 100;
+                }
+                pwm_1_WriteCompare1(speed);    // higher compare value means faster rack and pinion speed but more instability
                 pwm_1_WriteCompare2(0);
             }
-            else if (counter > target_count1) // if we are more than the target position, turn the motor backwards
+            else    // case if error is <= 0, case where error == 0 we need to turn off the motor anyways
             {
-                pwm_1_WriteCompare1(0);    // calculated compare value
-                pwm_1_WriteCompare2(100);                
-            }
-            else    // if we are at the desired position, then turn the motor off
-            {
+                speed = -kp * error;    // speed value is what we're writing to compare
+                if (speed > 100)
+                {
+                    speed = 100;
+                }
                 pwm_1_WriteCompare1(0);
-                pwm_1_WriteCompare2(0);                
+                pwm_1_WriteCompare2(speed);
             }
-            CyDelay(1); // wait a millisecond and increment the time value
+            CyDelay(10); // wait a millisecond and increment the time value
             lcd_char_1_ClearDisplay();
             lcd_char_1_Position(0, 0);
             lcd_char_1_PrintNumber(counter);
-            time += 1;
+            time += 10;
         }
         
         time = 0;
@@ -50,23 +60,29 @@ int main(void)
         while(time < 5000)
         {
             counter = quaddec_1_GetCounter();  // Second count after the motor has been turned on
+            error = target_count2 - counter;    // the error is the difference of where we want to be, and where we actually are
+
             
             // if we are less than the target position, turn the motor forwards
-            // edited to decrease the accuracy for both the if and else if branches to increase stability
-            if (counter < (target_count2 - 10))
+            if (error > 0)
             {
-                pwm_1_WriteCompare1(60);    // from 100 to 60 cmp value means slower motor speed, to increase stability
+                speed = kp * error;
+                if (speed > 100)
+                {
+                    speed = 100;
+                }
+                pwm_1_WriteCompare1(speed);    // higher compare value means faster rack and pinion speed but more instability
                 pwm_1_WriteCompare2(0);
             }
-            else if (counter > (target_count2 + 10)) // if we are more than the target position, turn the motor backwards
+            else    // case if error is <= 0, case where error == 0 we need to turn off the motor anyways
             {
-                pwm_1_WriteCompare1(0); 
-                pwm_1_WriteCompare2(60);                
-            }
-            else    // if we are at the desired position, then turn the motor off
-            {
+                speed = -kp * error;    // speed value is what we're writing to compare
+                if (speed > 100)
+                {
+                    speed = 100;
+                }
                 pwm_1_WriteCompare1(0);
-                pwm_1_WriteCompare2(0);                
+                pwm_1_WriteCompare2(speed);
             }
             CyDelay(10); // wait 10 milliseconds and increment time variable accordingly, this is to make the jittering more apparent
             lcd_char_1_ClearDisplay();
