@@ -10,13 +10,36 @@ int main(void)
     int error = 0;  // used to calculate the error difference from current count to target count
     int speed = 0;  // the proportional speed used for linear control
     float kp = 3.0; // the control gain constant, higher values means more instability, speed, and accuracy
+    uint8 receive;  // 8 bit byte to receive over uart transmission
+    
         
     quaddec_1_Start();
     lcd_char_1_Start();
     pwm_1_Start();
+    
+    // we set UART pins Rx_1 to 12[6] and Tx_1 to 12[7] because those 2 pins are internally connected to the USB connection of our PSoC.
+    // this allows serial communication to the PC over the USB
+    UART_1_Start();
 
     for(;;)
     {
+        while(1)
+        {
+            // wait for a value to come over UART
+            // print the value to the LCD screen
+            receive = UART_1_GetChar();
+            
+            // anytime we ask the PSoC to receive a value over UART and no value has been received, the PSoC treats it as "0"
+            // keep polling until we receive a value
+            while (receive == 0)
+            {
+                receive = UART_1_GetChar();
+            }
+            lcd_char_1_ClearDisplay();
+            lcd_char_1_Position(0, 5);
+            lcd_char_1_PrintNumber(receive);
+            time += 10;
+        }
         time = 0;
         
         // continue doing this control algorithm as long as it hasn't reached 5 seconds
