@@ -9,7 +9,7 @@ int main(void)
     int target_count2 = 2000;
     int error = 0;  // used to calculate the error difference from current count to target count
     int speed = 0;  // the proportional speed used for linear control
-    float kp = 3.0; // the control gain constant, higher values means more instability, speed, and accuracy
+    float kp = 0.14; // the control gain constant, higher values means more instability, speed, and accuracy
     uint8 receive;  // 8 bit byte to receive over uart transmission
 //    uint8 transmit;
 //    uint8 j;
