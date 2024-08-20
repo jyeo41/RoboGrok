@@ -251,6 +251,7 @@
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
     <Group key="Pin">
+      <Data key="b0522306-961d-47bc-94bc-732a6928204f" value="electromagnet_1" />
       <Data key="bd2217db-6288-452f-a9bb-7cce3c53c039" value="servo_2" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="servo_1" />
     </Group>
@@ -3339,6 +3340,11 @@
     </Group>
   </Group>
   <Group key="Pin2">
+    <Group key="b0522306-961d-47bc-94bc-732a6928204f">
+      <Group key="0">
+        <Data key="Port Format" value="1,5" />
+      </Group>
+    </Group>
     <Group key="bd2217db-6288-452f-a9bb-7cce3c53c039">
       <Group key="0">
         <Data key="Port Format" value="1,7" />

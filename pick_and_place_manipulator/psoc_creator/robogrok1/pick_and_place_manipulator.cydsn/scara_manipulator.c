@@ -1,4 +1,4 @@
-#include "project.h"
+#include "scara_manipulator.h"
 
 // Subroutine to take in desired user angle for joint 1 and then convert it to the proper compare value
 //  to drive the servo to its correct position
