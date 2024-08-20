@@ -17,18 +17,9 @@
       </addressBlock>
       <registers>
         <register>
-          <name>quaddec_motor_Cnt16_COUNTER</name>
-          <description>Counter value</description>
-          <addressOffset>0x4000640A</addressOffset>
-          <size>16</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-        <register>
           <name>quaddec_motor_STATUS_REG</name>
           <description>Quadrature Decoder Status Register</description>
-          <addressOffset>0x4000646B</addressOffset>
+          <addressOffset>0x40006468</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -64,6 +55,15 @@
             </field>
           </fields>
         </register>
+        <register>
+          <name>quaddec_motor_Cnt16_COUNTER</name>
+          <description>Counter value</description>
+          <addressOffset>0x40006508</addressOffset>
+          <size>16</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -80,7 +80,7 @@
         <register>
           <name>quaddec_motor_Cnt16_COUNTER</name>
           <description>UDB.A0 - Current Counter Value</description>
-          <addressOffset>0x4000640A</addressOffset>
+          <addressOffset>0x40006508</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -89,7 +89,7 @@
         <register>
           <name>quaddec_motor_Cnt16_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x4000642A</addressOffset>
+          <addressOffset>0x40006528</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -98,7 +98,7 @@
         <register>
           <name>quaddec_motor_Cnt16_COMPARE</name>
           <description>UDB.D1 - Assigned Compare Value</description>
-          <addressOffset>0x4000643A</addressOffset>
+          <addressOffset>0x40006538</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -107,7 +107,7 @@
         <register>
           <name>quaddec_motor_Cnt16_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647B</addressOffset>
+          <addressOffset>0x40006579</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -139,7 +139,7 @@
         <register>
           <name>quaddec_motor_Cnt16_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x4000648D</addressOffset>
+          <addressOffset>0x4000658A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -199,7 +199,7 @@
         <register>
           <name>quaddec_motor_Cnt16_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x4000649D</addressOffset>
+          <addressOffset>0x4000659A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -336,7 +336,7 @@
         <register>
           <name>pwm_1_COMPARE_1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x40006528</addressOffset>
+          <addressOffset>0x40006428</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -345,7 +345,7 @@
         <register>
           <name>pwm_1_COMPARE_2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x40006538</addressOffset>
+          <addressOffset>0x40006438</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -354,7 +354,7 @@
         <register>
           <name>pwm_1_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006579</addressOffset>
+          <addressOffset>0x40006479</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -386,7 +386,7 @@
         <register>
           <name>pwm_1_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006589</addressOffset>
+          <addressOffset>0x40006489</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -432,7 +432,7 @@
         <register>
           <name>pwm_1_STATUS_AUX_CTRLDP0</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006598</addressOffset>
+          <addressOffset>0x40006498</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -557,7 +557,7 @@
         <register>
           <name>pwm_1_STATUS_AUX_CTRLDP1</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006599</addressOffset>
+          <addressOffset>0x40006499</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -692,19 +692,19 @@
       </addressBlock>
       <registers>
         <register>
-          <name>pwm_motor_COMPARE_1</name>
+          <name>pwm_motor__COMPARE1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x40006426</addressOffset>
-          <size>16</size>
+          <addressOffset>0x4000642A</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>pwm_motor_COMPARE_2</name>
+          <name>pwm_motor__COMPARE2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x40006436</addressOffset>
-          <size>16</size>
+          <addressOffset>0x4000643A</addressOffset>
+          <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
@@ -712,7 +712,7 @@
         <register>
           <name>pwm_motor_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006477</addressOffset>
+          <addressOffset>0x4000647A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -744,7 +744,7 @@
         <register>
           <name>pwm_motor_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006487</addressOffset>
+          <addressOffset>0x4000648A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -788,134 +788,9 @@
           </fields>
         </register>
         <register>
-          <name>pwm_motor_STATUS_AUX_CTRLDP0</name>
+          <name>pwm_motor_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006496</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>FIFO0_CLR</name>
-              <description>FIFO0 clear</description>
-              <lsb>0</lsb>
-              <msb>0</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_FIFO_CLR_0</name>
-                  <description>Normal FIFO operation</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_FIFO_CLR_1</name>
-                  <description>Clear FIFO state</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>FIFO1_CLR</name>
-              <description>FIFO1 clear</description>
-              <lsb>1</lsb>
-              <msb>1</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_FIFO_CLR_0</name>
-                  <description>Normal FIFO operation</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_FIFO_CLR_1</name>
-                  <description>Clear FIFO state</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>FIFO0_LVL</name>
-              <description>FIFO level</description>
-              <lsb>2</lsb>
-              <msb>2</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_FIFO_LVL_0</name>
-                  <description>FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_FIFO_LVL_1</name>
-                  <description>FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>FIFO1_LVL</name>
-              <description>FIFO level</description>
-              <lsb>3</lsb>
-              <msb>3</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_FIFO_LVL_0</name>
-                  <description>FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_FIFO_LVL_1</name>
-                  <description>FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>INT_EN</name>
-              <description>No description available</description>
-              <lsb>4</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_INT_EN0</name>
-                  <description>Interrupt disabled</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_INT_EN1</name>
-                  <description>Interrupt enabled</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>CNT_START</name>
-              <description>FIFO0 clear</description>
-              <lsb>5</lsb>
-              <msb>5</msb>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>E_CNT_START0</name>
-                  <description>Disable counter</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>E_CNT_START1</name>
-                  <description>Enable counter</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>pwm_motor_STATUS_AUX_CTRLDP1</name>
-          <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006497</addressOffset>
+          <addressOffset>0x4000649A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

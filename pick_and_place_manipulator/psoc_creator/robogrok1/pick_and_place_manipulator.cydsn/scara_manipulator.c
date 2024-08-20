@@ -29,6 +29,7 @@ float theta_2(float angle)
 }
 
 // Subroutine to actually move the joints to their desired position by writing the calculated compare values to the PWM block
+// Range is from 0.0 to 180.0 degrees, angle 1 and angle 2 respectively
 void manipulator_joint_1_angles(float angle_1, float angle_2)
 {
     pwm_1_WriteCompare1(theta_1(angle_1));  // send servo 1 to clockwise position
@@ -37,6 +38,7 @@ void manipulator_joint_1_angles(float angle_1, float angle_2)
     CyDelay(3000);
 }
 
+// Range is from -90.0 to 90.0 degrees, angle 1 and angle 2 respectively
 void manipulator_joint_2_angles(float angle_1, float angle_2)
 {
     pwm_1_WriteCompare2(theta_2(angle_1));  // send servo 1 to clockwise position
