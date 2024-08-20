@@ -39,6 +39,7 @@
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">scara_manipulator.c</File>
           <File BuildType="BUILD" Toolchain="">electromagnet.c</File>
+          <File BuildType="BUILD" Toolchain="">motor.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">scara_manipulator.h</File>
           <File BuildType="BUILD" Toolchain="">electromagnet.h</File>
@@ -109,6 +110,41 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\electromagnet_1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\electromagnet_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\electromagnet_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_motor.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_motor.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_motor_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\motor_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_PVT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\c2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_isr.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_isr.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_Cnt16.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_Cnt16.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\quaddec_motor_Cnt16_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn\Export\ARM_GCC_Generic">
