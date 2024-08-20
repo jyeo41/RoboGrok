@@ -1,4 +1,4 @@
-#include "scara_manipulator.h"
+#include "servos.h"
 #include "electromagnet.h"
 #include "motor.h"
 
@@ -8,19 +8,25 @@ int main(void)
     // c2 and c1 are digital INPUT signals.
     // Set to 32 bits and 4x resolution for maximum accuracy since the motor won't be running at max speed.
     quaddec_motor_Start();  
-    pwm_1_Start();  // first start the pwm block for the two revolute joint servos
+    
+    // Initialization for all the relevant peripherals blocks
+    pwm_servos_Start();  
     pwm_motor_Start();
     lcd_display_Start();
     
     for(;;)
     {
+        CyDelay(3000);  // give time to plug in the external PSU
         // The initial position should be the rack at the top most position
-        rack_pinion_lower(5000);    // lower the rack and pinion
-        rack_pinion_raise(5000);    // raise the rack and pinion
+        servo_1_position(135.0, 1000);
+        servo_2_position(45.0, 3000);
+        rack_pinion_lower(3000);
+        rack_pinion_raise(3000);
         
-        
-//        manipulator_joint_1_angles(135.0, 180.0); 
-//        manipulator_joint_2_angles(-45.0, 0.0);     // range from -90.0 to 90.0 degrees
+        servo_1_position(0.0, 1000);
+        servo_2_position(0.0, 2000);
+        rack_pinion_lower(3000);
+        rack_pinion_raise(3000);
 
 //        electromagnet_on();
 //        CyDelay(2000);

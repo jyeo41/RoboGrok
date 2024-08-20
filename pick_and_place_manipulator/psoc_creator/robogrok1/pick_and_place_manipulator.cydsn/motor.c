@@ -1,7 +1,7 @@
 #include "motor.h"
 
 static int counter = 0;        // keep track of current position of rack and pinion using quadrature decoder
-static int target_raised = 500;    // the first position of the rack and pinion
+static int target_raised = 0;    // the first position of the rack and pinion
 static int target_lowered = 1600;    // the second position of the rack and pinion
 static int error = 0;
 static int speed = 0;

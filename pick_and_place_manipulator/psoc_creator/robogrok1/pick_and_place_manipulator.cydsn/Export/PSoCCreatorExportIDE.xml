@@ -37,11 +37,11 @@
       <Folder BuildType="STRICT" Path="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn">
         <Files Root="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
-          <File BuildType="BUILD" Toolchain="">scara_manipulator.c</File>
+          <File BuildType="BUILD" Toolchain="">servos.c</File>
           <File BuildType="BUILD" Toolchain="">electromagnet.c</File>
           <File BuildType="BUILD" Toolchain="">motor.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">scara_manipulator.h</File>
+          <File BuildType="BUILD" Toolchain="">servos.h</File>
           <File BuildType="BUILD" Toolchain="">electromagnet.h</File>
           <File BuildType="BUILD" Toolchain="">motor.h</File>
         </Files>
@@ -97,9 +97,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\servo_1_aliases.h</File>
@@ -146,6 +143,9 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\lcd_display_LCDPort.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn\Export\ARM_GCC_Generic">

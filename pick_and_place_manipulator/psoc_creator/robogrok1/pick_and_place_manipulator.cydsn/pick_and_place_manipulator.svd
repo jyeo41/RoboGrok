@@ -324,7 +324,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>pwm_1</name>
+      <name>pwm_servos</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -334,7 +334,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>pwm_1_COMPARE_1</name>
+          <name>pwm_servos_COMPARE_1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
           <addressOffset>0x40006428</addressOffset>
           <size>16</size>
@@ -343,7 +343,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>pwm_1_COMPARE_2</name>
+          <name>pwm_servos_COMPARE_2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
           <addressOffset>0x40006438</addressOffset>
           <size>16</size>
@@ -352,7 +352,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>pwm_1_Control_Reg</name>
+          <name>pwm_servos_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
           <addressOffset>0x40006479</addressOffset>
           <size>8</size>
@@ -384,7 +384,7 @@
           </fields>
         </register>
         <register>
-          <name>pwm_1_STATUS_MASK</name>
+          <name>pwm_servos_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
           <addressOffset>0x40006489</addressOffset>
           <size>8</size>
@@ -430,7 +430,7 @@
           </fields>
         </register>
         <register>
-          <name>pwm_1_STATUS_AUX_CTRLDP0</name>
+          <name>pwm_servos_STATUS_AUX_CTRLDP0</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006498</addressOffset>
           <size>8</size>
@@ -555,7 +555,7 @@
           </fields>
         </register>
         <register>
-          <name>pwm_1_STATUS_AUX_CTRLDP1</name>
+          <name>pwm_servos_STATUS_AUX_CTRLDP1</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006499</addressOffset>
           <size>8</size>
