@@ -31,7 +31,7 @@ float theta_2(float angle)
 // Subroutine to actually move the joints to their desired position by writing the calculated compare values to the PWM block
 // Angle parameter is between 0.0 and 180.0 degrees for servo 1
 // Delay parameter is an integer in milliseconds
-void servo_1_position(float angle, int delay)
+void servo_1_position_degrees(float angle, int delay)
 {
     pwm_servos_WriteCompare1(theta_1(angle));
     CyDelay(delay);
@@ -39,9 +39,82 @@ void servo_1_position(float angle, int delay)
 
 // Angle parameter is from -90.0 to 90.0 degrees for servo 2
 // Delay parameter is an integer in milliseconds
-void servo_2_position(float angle, int delay)
+void servo_2_position_degrees(float angle, int delay)
 {
     pwm_servos_WriteCompare2(theta_2(angle));
     CyDelay(delay);
 }
 
+// Function call to reset the servos position to neutral
+void servos_position_reset()
+{
+    servo_1_position_degrees(0.0, 1000);
+    servo_2_position_degrees(0.0, 1000);
+}
+
+// Modified subroutines to move servo joints using X and Y coordinates relative to the board grid rather than degree parameters
+// Delay parameter is an integer in milliseconds
+void servo_1_position_xy(float theta, int delay)
+{
+    pwm_servos_WriteCompare1(theta_1((theta / 3.14159) * 180));
+    CyDelay(delay);
+}
+
+// Angle parameter is from -90.0 to 90.0 degrees for servo 2
+// Delay parameter is an integer in milliseconds
+void servo_2_position_xy(float theta, int delay)
+{
+    pwm_servos_WriteCompare2(theta_2((theta / 3.14159) * 180));
+    CyDelay(delay);
+}
+
+// Subroutine to move the servos and end effector into the desired X and Y coordinates in Quadrant 1 of the board grid.
+// Takes in the desired X and Y positions as well as a delay to set after moving each revolute joint servo.
+// Note: The servo has a workspace it can target and if the desired coordinates cannot be reached it will result in
+//       undefined behavior where the servo moves erratically to a random position, or it just does not move at all
+//
+// The following graph is a rough estimation of the manipulator workspace having tested each possible coordinate from test.c file
+// The o's represent valid coordinates and the x's represent invalid coordinates
+//
+// 15 x x x x x x x x x x x x x x x x
+//    x x x x x x x x x x x x x x x x
+//    o o o o o x x x x x x x x x x x
+//    o o o o o o o x x x x x x x x x
+//    o o o o o o o o o x x x x x x x
+// 10 o o o o o o o o o o x x x x x x
+//    o o o o o o o o o o o x x x x x
+//    o o o o o o o o o o o o x x x x
+//    x x x o o o o o o o o o x x x x
+//    x x x x x x x x x x o o o x x x
+// 5  x x x x x x x x x x x o o x x x
+//    x x x x x x x x x x x x o o x x
+//    x x x x x x x x x x x x x o x x
+//    x x x x x x x x x x x x x x x x
+//    x x x x x x x x x x x x x x x x 
+// 0  x x x x x x x x x x x x x x x x
+//
+//    0         5         10        15
+//
+void servos_position_set_xy(float x, float y, int delay_servo_1, int delay_servo_2)
+{
+    static const float a2 = 6.5;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
+    static const float a4 = 7.3; 
+    
+    float r1 = 0.0;
+    float phi_1 = 0.0;
+    float phi_2 = 0.0;
+    float phi_3 = 0.0;
+    float theta_1 = 0.0;
+    float theta_2 = 0.0;
+    
+    // inverse kinematics equations to calculate the values for the joint variables theta_1 and theta_2
+    r1 = sqrt((x * x) + (y * y));   // equation 1
+    phi_1 = acos(((a4 * a4) - (a2 * a2) - (r1 * r1)) / (-2.0 * a2 * r1));   // equation 2
+    phi_2 = atan(y / x);    // equation 3
+    theta_1 = phi_2 - phi_1;    // equation 4
+    phi_3 = acos(((r1 * r1) - (a2 * a2) - (a4 * a4)) / (-2.0 * a2 * a4));   // equation 5
+    theta_2 = 3.14159 - phi_3;    // equation 6
+    
+    servo_1_position_xy(theta_1, delay_servo_1);    // use the calculated theta variables to move the servos to the desired position
+    servo_2_position_xy(theta_2, delay_servo_2);
+}

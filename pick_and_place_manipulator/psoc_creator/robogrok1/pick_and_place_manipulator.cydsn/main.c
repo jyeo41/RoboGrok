@@ -1,9 +1,10 @@
 #include "servos.h"
 #include "electromagnet.h"
 #include "motor.h"
+#include "test.h"
 
 int main(void)
-{    
+{       
     // Used to get the counter position of the dc motor.
     // c2 and c1 are digital INPUT signals.
     // Set to 32 bits and 4x resolution for maximum accuracy since the motor won't be running at max speed.
@@ -17,17 +18,16 @@ int main(void)
     for(;;)
     {
         CyDelay(3000);  // give time to plug in the external PSU
-        // The initial position should be the rack at the top most position
-        servo_1_position(135.0, 1000);
-        servo_2_position(45.0, 3000);
-        rack_pinion_lower(3000);
-        rack_pinion_raise(3000);
+//        test_manipulator_workspace();
         
-        servo_1_position(0.0, 1000);
-        servo_2_position(0.0, 2000);
-        rack_pinion_lower(3000);
-        rack_pinion_raise(3000);
-
+        servos_position_reset();
+        servos_position_set_xy(7.0, 9.0, 1000, 2000);
+        rack_pinion_lower(2000);
+        rack_pinion_raise(10);
+        servos_position_reset();
+        rack_pinion_lower(2000);
+        rack_pinion_raise(10);
+        
 //        electromagnet_on();
 //        CyDelay(2000);
 //        electromagnet_off();

@@ -40,9 +40,9 @@ void rack_pinion_lower(int time_delay)
             pwm_motor_WriteCompare2(0);        
         }
         CyDelay(10);
-        lcd_display_ClearDisplay();
-        lcd_display_Position(0, 0);
-        lcd_display_PrintNumber(counter);
+//        lcd_display_ClearDisplay();
+//        lcd_display_Position(0, 0);
+//        lcd_display_PrintNumber(counter);
         time += 10; // increment time variable by the amount of milliseconds of delay from CyDelay() function
     }
 }
@@ -77,9 +77,9 @@ void rack_pinion_raise(int time_delay)
             pwm_motor_WriteCompare2(0);        
         }
         CyDelay(10);
-        lcd_display_ClearDisplay();
-        lcd_display_Position(0, 0);
-        lcd_display_PrintNumber(counter);
+//        lcd_display_ClearDisplay();
+//        lcd_display_Position(0, 0);
+//        lcd_display_PrintNumber(counter);
         time += 10; // increment time variable by the amount of milliseconds of delay from CyDelay() function
     }
 }
