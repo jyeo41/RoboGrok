@@ -31,7 +31,7 @@ float theta_2(float angle)
 // Subroutine to actually move the joints to their desired position by writing the calculated compare values to the PWM block
 // Angle parameter is between 0.0 and 180.0 degrees for servo 1
 // Delay parameter is an integer in milliseconds
-void servo_1_position(float angle, int delay)
+void servo_1_position_degrees(float angle, int delay)
 {
     pwm_servos_WriteCompare1(theta_1(angle));
     CyDelay(delay);
@@ -39,9 +39,24 @@ void servo_1_position(float angle, int delay)
 
 // Angle parameter is from -90.0 to 90.0 degrees for servo 2
 // Delay parameter is an integer in milliseconds
-void servo_2_position(float angle, int delay)
+void servo_2_position_degrees(float angle, int delay)
 {
     pwm_servos_WriteCompare2(theta_2(angle));
     CyDelay(delay);
 }
 
+// Modified subroutines to move servo joints using X and Y coordinates relative to the board grid rather than degree parameters
+// Delay parameter is an integer in milliseconds
+void servo_1_position_xy(float theta, int delay)
+{
+    pwm_servos_WriteCompare1(theta_1((theta / 3.14159) * 180));
+    CyDelay(delay);
+}
+
+// Angle parameter is from -90.0 to 90.0 degrees for servo 2
+// Delay parameter is an integer in milliseconds
+void servo_2_position_xy(float theta, int delay)
+{
+    pwm_servos_WriteCompare2(theta_2((theta / 3.14159) * 180));
+    CyDelay(delay);
+}
