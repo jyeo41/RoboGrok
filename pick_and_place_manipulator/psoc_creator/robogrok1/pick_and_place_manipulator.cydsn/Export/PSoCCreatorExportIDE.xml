@@ -41,11 +41,13 @@
           <File BuildType="BUILD" Toolchain="">electromagnet.c</File>
           <File BuildType="BUILD" Toolchain="">motor.c</File>
           <File BuildType="BUILD" Toolchain="">test.c</File>
+          <File BuildType="BUILD" Toolchain="">uart.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">servos.h</File>
           <File BuildType="BUILD" Toolchain="">electromagnet.h</File>
           <File BuildType="BUILD" Toolchain="">motor.h</File>
           <File BuildType="BUILD" Toolchain="">test.h</File>
+          <File BuildType="BUILD" Toolchain="">uart.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn\Generated_Source\PSoC5">
@@ -148,6 +150,13 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_servos_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1_IntClock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\uart_1_IntClock.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\robogrok\pick_and_place_manipulator\psoc_creator\robogrok1\pick_and_place_manipulator.cydsn\Export\ARM_GCC_Generic">

@@ -8,12 +8,15 @@
 
 import numpy as np
 import cv2
+import serial
 np.seterr(divide='ignore', invalid='ignore')
 
 capture = cv2.VideoCapture(0)   # 0 is for the camera number connected to our PC
 
 centimeters_to_pixels_horizontal = 11.8 / 640.0    # 11.8cm width for camera FOV and 640 pixels horizontally
 centimeters_to_pixels_vertical = 8.3 / 480.0    # 8.3cm height for camera FOV and 480 pixels horizontally
+x0_coordinate = 0
+y0_coordinate = 0
 
 
 # Calculating coordinate transformation from camera coordinate system to the base frame manipulator coordinate system
@@ -128,6 +131,21 @@ while(1):
 
 cv2.destroyAllWindows()
 
+serial = serial.Serial()
+serial.baudrate = 9600
+serial.port = 'COM10'
+serial.timeout = 1
+serial.open()
+
+x0_coordinate = int(np.uint8(x0_coordinate * 10))
+y0_coordinate = int(np.uint8(y0_coordinate * 10))
+
+transmit_x0 = bytearray([x0_coordinate])
+transmit_y0 = bytearray([y0_coordinate])
+serial.write(transmit_x0)
+serial.write(transmit_y0)
+
+serial.close()
 
 ##### Project Notes #####
 #########################

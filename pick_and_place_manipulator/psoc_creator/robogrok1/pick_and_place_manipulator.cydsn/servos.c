@@ -46,10 +46,17 @@ void servo_2_position_degrees(float angle, int delay)
 }
 
 // Function call to reset the servos position to neutral
-void servos_position_reset()
+void servos_position_reset(int delay)
 {
-    servo_1_position_degrees(0.0, 1000);
-    servo_2_position_degrees(0.0, 1000);
+    servo_1_position_degrees(0.0, delay);
+    servo_2_position_degrees(0.0, delay);
+}
+
+// Function call to reset the servos position to neutral
+void servos_position_before_dropoff(int delay)
+{
+    servo_1_position_degrees(0.0, delay);
+    servo_2_position_degrees(25.0, delay);
 }
 
 // Modified subroutines to move servo joints using X and Y coordinates relative to the board grid rather than degree parameters
@@ -97,8 +104,8 @@ void servo_2_position_xy(float theta, int delay)
 //
 void servos_position_set_xy(float x, float y, int delay_servo_1, int delay_servo_2)
 {
-    static const float a2 = 6.5;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
-    static const float a4 = 7.3; 
+    static const float a2 = 6.0;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
+    static const float a4 = 7.5;    // original tuning, 6.5 and 7.3
     
     float r1 = 0.0;
     float phi_1 = 0.0;
