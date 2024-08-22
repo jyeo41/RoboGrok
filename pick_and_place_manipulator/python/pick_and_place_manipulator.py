@@ -12,6 +12,9 @@ np.seterr(divide='ignore', invalid='ignore')
 
 capture = cv2.VideoCapture(0)   # 0 is for the camera number connected to our PC
 
+centimeters_to_pixels_horizontal = 11.8 / 640.0    # 11.8cm width for camera FOV and 640 pixels horizontally
+centimeters_to_pixels_vertical = 8.3 / 480.0    # 8.3cm height for camera FOV and 480 pixels horizontally
+
 # First capture the background without the target object inside of the picture.
 # Convert it to grayscale.
 # Convert it to black and white using the threshold method.
@@ -46,6 +49,7 @@ while(1):
     image_difference = np.uint8(image_difference)
     cv2.imshow('difference', image_difference)
 
+    # threshold method to convert from grayscale to true black and white image in terms of machine vision standards
     image_black_white = image_difference
     image_black_white[image_black_white <= 100] = 0
     image_black_white[image_black_white > 100] = 1
@@ -57,6 +61,7 @@ while(1):
     column_total = np.sum(column_multiply)  # get the total sum of the column values
     matrix_total = np.sum(np.sum(image_black_white)) # total sum of the difference matrix, we have to np.sum() twice to achieve this
     column_location = column_total / matrix_total   # calculated column center of the bright object in the difference image]
+    x_location = column_location * centimeters_to_pixels_horizontal # convert from unit of pixels to centimeters 
 
 ##    print(column_location)
 
@@ -67,10 +72,11 @@ while(1):
     row_total = np.sum(row_multiply)
     matrix_total = np.sum(np.sum(image_black_white))
     row_location = row_total / matrix_total
+    y_location = row_location * centimeters_to_pixels_vertical
 
 ##    print(row_location)
 
-    print(column_location, row_location)
+    print(x_location, y_location)
     
     escape_key = cv2.waitKey(5)
     if(escape_key == 27):
