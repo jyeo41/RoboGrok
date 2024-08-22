@@ -11,8 +11,8 @@
 // DROPOFF BIN is used to get the rack high enough to avoid hitting the dropoff bin.
 #define TARGET_RESET 0
 #define TARGET_BELOW_CAMERA 1000
-#define TARGET_PICKUP_OBJECT 1800
-#define TARGET_DROPOFF_BIN 600
+#define TARGET_PICKUP_OBJECT 1900
+#define TARGET_DROPOFF_BIN 500
 
 int main(void)
 {   
@@ -42,19 +42,19 @@ int main(void)
 
         servos_position_reset(150);
         rack_pinion_lower(1000, TARGET_DROPOFF_BIN);
-        servos_position_set_xy(received_x, received_y, 300, 300);
-        rack_pinion_lower(1000, TARGET_BELOW_CAMERA);
-        rack_pinion_lower(1500, TARGET_PICKUP_OBJECT);
+        servos_position_before_dropoff(500);
+        rack_pinion_lower(500, TARGET_BELOW_CAMERA);
+        servos_position_set_xy(received_x, received_y, 500, 500);
+//        rack_pinion_lower(1500, TARGET_PICKUP_OBJECT);    // the 1500 delay time is for testing without the magnet
+        electromagnet_on();
+        rack_pinion_lower(2000, TARGET_PICKUP_OBJECT);
         rack_pinion_raise(1000, TARGET_BELOW_CAMERA);
         servos_position_before_dropoff(500);
-        rack_pinion_raise(500, TARGET_DROPOFF_BIN);
-        servos_position_reset(1000);
-        rack_pinion_raise(10, TARGET_RESET);
-        
-//        electromagnet_on();
-//        CyDelay(2000);
-//        electromagnet_off();
-//        CyDelay(10000);
+        rack_pinion_raise(500, TARGET_RESET);
+        servos_position_reset(500);
+        electromagnet_off();
+        // rack_pinion_raise(100, TARGET_RESET);
+        CyDelay(10000); // need to give magnet time to cool off since its connected to the external PSU it can get really hot
     }
 }
 
