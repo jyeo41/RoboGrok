@@ -4,7 +4,7 @@ static int counter = 0;        // keep track of current position of rack and pin
 static int error = 0;
 static int speed = 0;
 static int time = 0;
-static const float kp = 0.25;
+static const float kp = 0.75;
 
 
 // time_delay parameter is how long we want to give the rack to get to its proper position in milliseconds

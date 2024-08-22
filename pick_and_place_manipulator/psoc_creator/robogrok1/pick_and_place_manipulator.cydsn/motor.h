@@ -10,7 +10,7 @@
 // DROPOFF BIN is used to get the rack high enough to avoid hitting the dropoff bin.
 #define TARGET_RESET 0
 #define TARGET_BELOW_CAMERA 1000
-#define TARGET_PICKUP_OBJECT 2000
+#define TARGET_PICKUP_OBJECT 1900
 #define TARGET_DROPOFF_BIN 400
     
 void rack_pinion_lower(int time_delay, int target);

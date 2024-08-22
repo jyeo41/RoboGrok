@@ -22,20 +22,19 @@ int main(void)
     
     for(;;)
     {
-        test_xy_coordinates_accuracy();
 //        test_servo_angles();
+//        test_xy_coordinates_accuracy();
+//        test_manipulator_workspace();
 //        test_uart_polling_both_coordinates(&received_x, &received_y)
 //        test_uart_polling_receive(&receive);
-//        CyDelay(3000);  // give time to plug in the external PSU
-//        test_manipulator_workspace();
 //        test_motor_counter();
         uart_polling_receive_both_coordinates(&received_x, &received_y);
         uart_print_coordinates(&received_x, &received_y);
 
-        servos_position_reset(150);
+        servos_position_reset(500);
         rack_pinion_lower(1000, TARGET_DROPOFF_BIN);
-        servos_position_before_dropoff(500);
-        rack_pinion_lower(500, TARGET_BELOW_CAMERA);
+        servos_position_before_dropoff(1000);
+        rack_pinion_lower(1000, TARGET_BELOW_CAMERA);
         servos_position_set_xy(received_x, received_y, 500, 500);
         electromagnet_on();
         rack_pinion_lower(2000, TARGET_PICKUP_OBJECT);

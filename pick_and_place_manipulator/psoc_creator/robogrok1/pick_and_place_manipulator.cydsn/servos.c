@@ -105,7 +105,7 @@ void servo_2_position_xy(float theta, int delay)
 void servos_position_set_xy(float x, float y, int delay_servo_1, int delay_servo_2)
 {
     static const float a2 = 5.8;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
-    static const float a4 = 7.8;    // original tuning, 6.5 and 7.3
+    static const float a4 = 7.6;    // original tuning, 6.5 and 7.3
     
     float r1 = 0.0;
     float phi_1 = 0.0;
