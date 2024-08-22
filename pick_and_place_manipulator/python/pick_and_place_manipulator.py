@@ -8,12 +8,15 @@
 
 import numpy as np
 import cv2
+import serial
 np.seterr(divide='ignore', invalid='ignore')
 
 capture = cv2.VideoCapture(0)   # 0 is for the camera number connected to our PC
 
 centimeters_to_pixels_horizontal = 11.8 / 640.0    # 11.8cm width for camera FOV and 640 pixels horizontally
 centimeters_to_pixels_vertical = 8.3 / 480.0    # 8.3cm height for camera FOV and 480 pixels horizontally
+x0_coordinate = 0
+y0_coordinate = 0
 
 
 # Calculating coordinate transformation from camera coordinate system to the base frame manipulator coordinate system
@@ -126,8 +129,22 @@ while(1):
     if(escape_key == 27):
         break
 
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() # close all camera frames
 
+serial = serial.Serial()    # initialize the serial port
+serial.baudrate = 9600  # set the baud rate to match our UART top-design block in PSoC Creator
+serial.port = 'COM10' # found in windows device manager > ports > KitProg USB-UART
+serial.open()   # open the port
+
+x0_coordinate = int(np.uint8(x0_coordinate * 10))   # Multiplying by 10 to get 1 floating point precision.
+y0_coordinate = int(np.uint8(y0_coordinate * 10))   # Convert to uint8 so its the appropriate byte length for UART transmission
+
+transmit_x0 = bytearray([x0_coordinate])    # Use python bytearray() function to convert the integers to their byte representation
+transmit_y0 = bytearray([y0_coordinate])
+serial.write(transmit_x0)   # Finally transmit the integers in their byte converted form
+serial.write(transmit_y0)
+
+serial.close()  # Close the port
 
 ##### Project Notes #####
 #########################

@@ -1,22 +1,20 @@
 #include "motor.h"
 
 static int counter = 0;        // keep track of current position of rack and pinion using quadrature decoder
-static int target_raised = 0;    // the first position of the rack and pinion
-static int target_lowered = 1600;    // the second position of the rack and pinion
 static int error = 0;
 static int speed = 0;
 static int time = 0;
-float kp = 1.0;
+static const float kp = 1.0;
 
 
 // time_delay parameter is how long we want to give the rack to get to its proper position in milliseconds
-void rack_pinion_lower(int time_delay)
+void rack_pinion_lower(int time_delay, int target)
 {
     time = 0;
     while (time < time_delay)
     {
         counter = quaddec_motor_GetCounter();   // getting the current position of the rack
-        error = target_lowered - counter; // calculate error to use proportional control algorithm
+        error = target - counter; // calculate error to use proportional control algorithm
         
         if (error > 0)  // This means the rack still has distance left to reach the "bottom" position
         {
@@ -47,13 +45,13 @@ void rack_pinion_lower(int time_delay)
     }
 }
 
-void rack_pinion_raise(int time_delay)
+void rack_pinion_raise(int time_delay, int target)
 {
     time = 0;
     while (time < time_delay)
     {
         counter = quaddec_motor_GetCounter();   // getting the current position of the rack
-        error = target_raised - counter; // calculate error to use proportional control algorithm
+        error = target - counter; // calculate error to use proportional control algorithm
         
         if (error > 0)  // This means the rack still has distance left to reach the "bottom" position
         {

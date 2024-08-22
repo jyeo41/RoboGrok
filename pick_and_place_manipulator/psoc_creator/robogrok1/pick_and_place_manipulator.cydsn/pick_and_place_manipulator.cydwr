@@ -256,11 +256,13 @@
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="c1" />
       <Data key="436a9a99-4350-44f4-ab44-c54da2ce8b1b" value="c1" />
       <Data key="837bc96c-1471-42c0-8703-ea4ee85cde30/ed092b9b-d398-4703-be89-cebf998501f6" value="lcd_display_LCDPort" />
+      <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="receive_1" />
       <Data key="adc5b1b5-b953-4c7e-aef0-5edc8fb0d880" value="c2" />
       <Data key="aff290ad-3e59-43fd-aa8a-4d364023395a" value="motor_1" />
       <Data key="b0522306-961d-47bc-94bc-732a6928204f" value="electromagnet_1" />
       <Data key="bd2217db-6288-452f-a9bb-7cce3c53c039" value="servo_2" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="servo_1" />
+      <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="transmit_1" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3390,6 +3392,11 @@
         <Data key="Port Format" value="2,6" />
       </Group>
     </Group>
+    <Group key="1425177d-0d0e-4468-8bcc-e638e5509a9b">
+      <Group key="0">
+        <Data key="Port Format" value="12,6" />
+      </Group>
+    </Group>
     <Group key="adc5b1b5-b953-4c7e-aef0-5edc8fb0d880">
       <Group key="0">
         <Data key="Port Format" value="15,5" />
@@ -3413,6 +3420,11 @@
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
       <Group key="0">
         <Data key="Port Format" value="1,6" />
+      </Group>
+    </Group>
+    <Group key="ed092b9b-d398-4703-be89-cebf998501f6">
+      <Group key="0">
+        <Data key="Port Format" value="12,7" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />
