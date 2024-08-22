@@ -2,26 +2,26 @@
 
 // Subroutine to take in desired user angle for joint 1 and then convert it to the proper compare value
 //  to drive the servo to its correct position
-float theta_1(float angle)
+int theta_1(float angle)
 {
-    float compare;  // Returns this value to write to the PWM to turn the servos
-    float min_angle = 0;    // Servo 1 moves in an arc from 0 to 180 degrees on the board
-    float max_angle = 180;
-    float min_compare = 1350;   // Manually tuned the min and max compare values for best accuracy
-    float max_compare = 7040;
+    int compare;  // Returns this value to write to the PWM to turn the servos
+    int min_angle = 0;    // Servo 1 moves in an arc from 0 to 180 degrees on the board
+    int max_angle = 180;
+    int min_compare = 1330;   // Decreasing this value makes the servo turn more opposite of the RH rule
+    int max_compare = 7100;   // Increasing this value makes the servo turn more with the RH rule
     
     // The equation to calculate the corresponding compare value when the user provides a desired angle
     compare = (((max_compare - min_compare) / (max_angle - min_angle)) * (angle - min_angle)) + min_compare;
     return compare;
 }
 
-float theta_2(float angle)
+int theta_2(float angle)
 {
-    float compare;
-    float min_angle = -90;    // For servo two, the axis of rotation is from -90 to positive 90 due to the positioning of the joint
-    float max_angle = 90;
-    float min_compare = 1130;
-    float max_compare = 7030;
+    int compare;
+    int min_angle = -90;    // For servo two, the axis of rotation is from -90 to positive 90 due to the positioning of the joint
+    int max_angle = 90;
+    int min_compare = 1200; // Decreasing this value makes the servo turn more opposite of the RH rule
+    int max_compare = 7050; // Increasing this value makes the servo turn more with the RH rule
     
     // The equation to calculate the corresponding compare value when the user provides a desired angle
     compare = (((max_compare - min_compare) / (max_angle - min_angle)) * (angle - min_angle)) + min_compare;
@@ -63,7 +63,7 @@ void servos_position_before_dropoff(int delay)
 // Delay parameter is an integer in milliseconds
 void servo_1_position_xy(float theta, int delay)
 {
-    pwm_servos_WriteCompare1(theta_1((theta / 3.14159) * 180));
+    pwm_servos_WriteCompare1(theta_1((theta / M_PI) * 180.0));
     CyDelay(delay);
 }
 
@@ -71,7 +71,7 @@ void servo_1_position_xy(float theta, int delay)
 // Delay parameter is an integer in milliseconds
 void servo_2_position_xy(float theta, int delay)
 {
-    pwm_servos_WriteCompare2(theta_2((theta / 3.14159) * 180));
+    pwm_servos_WriteCompare2(theta_2((theta / M_PI) * 180.0));
     CyDelay(delay);
 }
 
@@ -104,8 +104,8 @@ void servo_2_position_xy(float theta, int delay)
 //
 void servos_position_set_xy(float x, float y, int delay_servo_1, int delay_servo_2)
 {
-    static const float a2 = 6.0;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
-    static const float a4 = 7.5;    // original tuning, 6.5 and 7.3
+    static const float a2 = 5.8;    // link lengths in centimeters, tuned to be within a fraction of a cm for targeted coordinates
+    static const float a4 = 7.8;    // original tuning, 6.5 and 7.3
     
     float r1 = 0.0;
     float phi_1 = 0.0;
@@ -120,7 +120,7 @@ void servos_position_set_xy(float x, float y, int delay_servo_1, int delay_servo
     phi_2 = atan(y / x);    // equation 3
     theta_1 = phi_2 - phi_1;    // equation 4
     phi_3 = acos(((r1 * r1) - (a2 * a2) - (a4 * a4)) / (-2.0 * a2 * a4));   // equation 5
-    theta_2 = 3.14159 - phi_3;    // equation 6
+    theta_2 = M_PI - phi_3;    // equation 6
     
     servo_1_position_xy(theta_1, delay_servo_1);    // use the calculated theta variables to move the servos to the desired position
     servo_2_position_xy(theta_2, delay_servo_2);
