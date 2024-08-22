@@ -129,23 +129,22 @@ while(1):
     if(escape_key == 27):
         break
 
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() # close all camera frames
 
-serial = serial.Serial()
-serial.baudrate = 9600
-serial.port = 'COM10'
-serial.timeout = 1
-serial.open()
+serial = serial.Serial()    # initialize the serial port
+serial.baudrate = 9600  # set the baud rate to match our UART top-design block in PSoC Creator
+serial.port = 'COM10' # found in windows device manager > ports > KitProg USB-UART
+serial.open()   # open the port
 
-x0_coordinate = int(np.uint8(x0_coordinate * 10))
-y0_coordinate = int(np.uint8(y0_coordinate * 10))
+x0_coordinate = int(np.uint8(x0_coordinate * 10))   # Multiplying by 10 to get 1 floating point precision.
+y0_coordinate = int(np.uint8(y0_coordinate * 10))   # Convert to uint8 so its the appropriate byte length for UART transmission
 
-transmit_x0 = bytearray([x0_coordinate])
+transmit_x0 = bytearray([x0_coordinate])    # Use python bytearray() function to convert the integers to their byte representation
 transmit_y0 = bytearray([y0_coordinate])
-serial.write(transmit_x0)
+serial.write(transmit_x0)   # Finally transmit the integers in their byte converted form
 serial.write(transmit_y0)
 
-serial.close()
+serial.close()  # Close the port
 
 ##### Project Notes #####
 #########################
