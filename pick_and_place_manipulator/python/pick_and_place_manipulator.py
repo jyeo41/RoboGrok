@@ -15,6 +15,40 @@ capture = cv2.VideoCapture(0)   # 0 is for the camera number connected to our PC
 centimeters_to_pixels_horizontal = 11.8 / 640.0    # 11.8cm width for camera FOV and 640 pixels horizontally
 centimeters_to_pixels_vertical = 8.3 / 480.0    # 8.3cm height for camera FOV and 480 pixels horizontally
 
+
+# Calculating coordinate transformation from camera coordinate system to the base frame manipulator coordinate system
+# The equation is the following:
+#
+# [ [x0]             [ [xc]
+#   [y0]   =  H0_C *   [yc]
+#   [z0]               [zc]
+#   [ 1] ]             [ 1] ] 
+#
+# Where X0, Y0, Z0 represents the manipulator base frame, and Xc, Yc, Zc represents the camera coordinate system.
+# Once we have the homogeneous matrix H0_C and take the dot product of the camera coordinates, we will get the transformed coordinates
+#    for our base frame.
+#
+# First we do calculations to find our rotation matrix R0_C
+rotation_180_x = [ [1, 0, 0],
+                   [0, np.cos(np.pi), -np.sin(np.pi)],
+                   [0, np.sin(np.pi), np.cos(np.pi)] ]  # needs to be np.pi because we are using radians
+
+converted_radians = (90.0 / 180.0) * np.pi  # converting from 90 degrees to radians
+rotation_90_z = [ [np.cos(converted_radians), -np.sin(converted_radians), 0],
+                       [np.sin(converted_radians), np.cos(converted_radians), 0],
+                       [0, 0, 1] ]
+
+R0_C = np.dot(rotation_180_x, rotation_90_z)
+
+# Displacement vector calculated by hand using a ruler from the base frame to camera frame. Tuned by trial and error.
+# In units of centimeters. Original measurements by hand were 8.5 for x and 13.3 for y.
+d0_C = [ [8.15],
+         [13.65],
+         [0] ]
+H0_C = np.concatenate((R0_C, d0_C), 1)  # 1 parameter means left to right concatenate
+H0_C = np.concatenate((H0_C, [ [0, 0, 0, 1] ]), 0)  # 0 means top down concatenate. We need the [0, 0, 0, 1] vector to complete the HTM
+
+
 # First capture the background without the target object inside of the picture.
 # Convert it to grayscale.
 # Convert it to black and white using the threshold method.
@@ -61,9 +95,6 @@ while(1):
     column_total = np.sum(column_multiply)  # get the total sum of the column values
     matrix_total = np.sum(np.sum(image_black_white)) # total sum of the difference matrix, we have to np.sum() twice to achieve this
     column_location = column_total / matrix_total   # calculated column center of the bright object in the difference image]
-    x_location = column_location * centimeters_to_pixels_horizontal # convert from unit of pixels to centimeters 
-
-##    print(column_location)
 
     row_sums = np.matrix(np.sum(image_black_white, 1))  # sum along the rows axis, currently it has 480 rows and 1 column
     row_sums = row_sums.transpose() # transpose the matrix so we have 1 row and 480 columns
@@ -72,11 +103,24 @@ while(1):
     row_total = np.sum(row_multiply)
     matrix_total = np.sum(np.sum(image_black_white))
     row_location = row_total / matrix_total
+
+    # Convert from unit of pixels to centimeters 
+    x_location = column_location * centimeters_to_pixels_horizontal 
     y_location = row_location * centimeters_to_pixels_vertical
 
-##    print(row_location)
+    # Vector for the x, y, z locations in the camera frame using the converted x and y locations in centimeters
+    point_camera = [ [x_location],
+                     [y_location],
+                     [0],
+                     [1] ]
 
-    print(x_location, y_location)
+    # Final operation using our equation for our equation defined at the top
+    point_base_frame = np.dot(H0_C, point_camera)
+
+    x0_coordinate = point_base_frame[0]
+    y0_coordinate = point_base_frame[1]
+
+    print(x0_coordinate, y0_coordinate)
     
     escape_key = cv2.waitKey(5)
     if(escape_key == 27):
@@ -97,7 +141,3 @@ cv2.destroyAllWindows()
 # Solution: Small error but a critical one. The line [image_black_white <= 100] = 0 HAS to come first, otherwise it'll set all the
 #           pixels that got set to 1 immediately to 0 as well which is what we do not want.
 #
-#
-#
-#
-
