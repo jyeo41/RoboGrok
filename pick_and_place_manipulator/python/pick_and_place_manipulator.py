@@ -18,12 +18,34 @@ capture = cv2.VideoCapture(0)   # 0 is for the camera number connected to our PC
 # use pixel to centimeter to convert the location of the object in units of cm
 # use a homogenous transformation matrix to convert the position from the camera coordinate system to the base frame
 
+# while loop to capture the first background frame
 while(1):
     _,frame = capture.read()    # capture a continuous feed of the camera
-    gray_image_1 = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # turn the frame into a grayscale
-    cv2.imshow('background', gray_image_1)  # show this capture on the desktop
+    image_gray_1 = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # turn the frame into a grayscale
+    cv2.imshow('background', image_gray_1)  # show this capture on the desktop
 
     escape_key = cv2.waitKey(5) # allow user to stop the feed by pressing the 'ESC' key
+    if(escape_key == 27):
+        break
+
+# while loop to capture the second foreground frame to compare to the background
+while(1):
+    _,frame = capture.read()
+    image_gray_2 = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    cv2.imshow('foreground', image_gray_2)
+
+    # image subtraction technique being used to make the targeted object the brightest compared to a dark background
+    # Note: np.int16 is used to convert to unsigned integers to handle possible negative integers when subtracting the matrices.
+    #       The values for each pixel of the matrix is from 0 - 255 so it can only handle positive integers.
+    #       np.matrix is used to allow mathematical operations on the grayscale frames.
+    #       Absolute value is used so no invalid negative numbers remain after the pixel differences are taken.
+    #       We error check for pixel values > 255 to keep it within the valid 0-255 range
+    image_difference = np.absolute(np.matrix(np.int16(image_gray_2)) - np.matrix(np.int16(image_gray_1)))
+    image_difference[image_difference > 255] = 255
+    image_difference = np.uint8(image_difference)
+    cv2.imshow('difference', image_difference)
+    
+    escape_key = cv2.waitKey(5)
     if(escape_key == 27):
         break
 
