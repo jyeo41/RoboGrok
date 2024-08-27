@@ -8,6 +8,7 @@ to apply the theory and practices.
 The course is split into 2 parts: Robotics 1 (finished) and Robotics 2 (WIP), using a kit purchased from the professor herself.
 
 Extensive and detailed comments have been documented throughout the project files.
+The directory "pick and place manipulator" contains the final project code.
 
 # Build
 Languages: C and Python
