@@ -10,6 +10,9 @@ The course is split into 2 parts: Robotics 1 (finished) and Robotics 2 (WIP), us
 Extensive and detailed comments have been documented throughout the project files.
 The directory "pick and place manipulator" contains the final project code.
 
+Demo Youtube Video:
+https://youtu.be/7BzlcZsdYqw
+
 # Build
 Languages: C and Python
 
