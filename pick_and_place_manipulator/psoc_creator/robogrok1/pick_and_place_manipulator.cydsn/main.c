@@ -35,6 +35,9 @@ int main(void)
         rack_pinion_lower(1000, TARGET_DROPOFF_BIN);
         servos_position_before_dropoff(1000);
         rack_pinion_lower(1000, TARGET_BELOW_CAMERA);
+        
+        received_x -= 0.5; // offset for end manipulator not being straight due to the flex of the plastic and build
+        
         servos_position_set_xy(received_x, received_y, 500, 500);
         electromagnet_on();
         rack_pinion_lower(2000, TARGET_PICKUP_OBJECT);
