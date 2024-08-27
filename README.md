@@ -11,6 +11,9 @@ Extensive and detailed comments have been documented throughout the project file
 
 # Build
 Languages: C and Python
+
 IDE: PSoC Creator
+
 MCU: CY8C5888LTI-LP097
+
 Libraries: Numpy and Pyserial for Python
